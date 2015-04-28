@@ -1,9 +1,4 @@
-/* 
- * File:   main.cpp
- * Author: luisrbrenes
- *
- * Created on April 24, 2015, 7:57 PM
- */
+
 
 #include <cstdlib>
 
