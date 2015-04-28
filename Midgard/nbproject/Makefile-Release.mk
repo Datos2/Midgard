@@ -35,7 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/grafo.o \
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/nodoGrafo.o
 
 
 # C Compiler Flags
@@ -62,10 +64,20 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/grafo.o: grafo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/grafo.o grafo.cpp
+
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/nodoGrafo.o: nodoGrafo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/nodoGrafo.o nodoGrafo.cpp
 
 # Subprojects
 .build-subprojects:
