@@ -10,8 +10,6 @@
 Mundo::Mundo() {
 }
 
-Mundo::Mundo(const Mundo& orig) {
-}
 
 Mundo::~Mundo() {
 }

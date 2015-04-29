@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f1" displayName="Datos" projectFiles="true" kind="ROOT">
+      <itemPath>Datos/Jzon.cpp</itemPath>
+      <itemPath>Datos/Jzon.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f2"
+                   displayName="Estructuras"
+                   projectFiles="true"
+                   kind="ROOT">
+      <itemPath>Estructuras/Arbol_Genealogico.cpp</itemPath>
+      <itemPath>Estructuras/Arbol_Genealogico.h</itemPath>
+      <itemPath>Estructuras/BitVector.cpp</itemPath>
+      <itemPath>Estructuras/BitVector.h</itemPath>
+      <itemPath>Estructuras/ListaSimple.h</itemPath>
+      <itemPath>Estructuras/Nodo.h</itemPath>
+      <itemPath>Estructuras/Nodo_Arbol.cpp</itemPath>
+      <itemPath>Estructuras/Nodo_Arbol.h</itemPath>
+      <itemPath>Estructuras/grafo.cpp</itemPath>
+      <itemPath>Estructuras/grafo.h</itemPath>
+      <itemPath>Estructuras/linkedList.h</itemPath>
+      <itemPath>Estructuras/linkedNode.h</itemPath>
+      <itemPath>Estructuras/nodoGrafo.cpp</itemPath>
+      <itemPath>Estructuras/nodoGrafo.h</itemPath>
+    </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Calculadora.h</itemPath>
+      <itemPath>Edda.h</itemPath>
+      <itemPath>Elves.h</itemPath>
+      <itemPath>Individuo.h</itemPath>
+      <itemPath>Mundo.h</itemPath>
+      <itemPath>Pueblo.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,6 +41,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Calculadora.cpp</itemPath>
+      <itemPath>Edda.cpp</itemPath>
+      <itemPath>Elves.cpp</itemPath>
+      <itemPath>Individuo.cpp</itemPath>
+      <itemPath>Mundo.cpp</itemPath>
+      <itemPath>Pueblo.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -36,6 +71,62 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Calculadora.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Calculadora.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/Jzon.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Datos/Jzon.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Edda.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Edda.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Elves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Elves.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Arbol_Genealogico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/Arbol_Genealogico.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/BitVector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/BitVector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/ListaSimple.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo_Arbol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo_Arbol.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/grafo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/grafo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/linkedList.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/linkedNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/nodoGrafo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/nodoGrafo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Individuo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Individuo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Mundo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pueblo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pueblo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -59,6 +150,62 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Calculadora.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Calculadora.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/Jzon.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Datos/Jzon.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Edda.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Edda.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Elves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Elves.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Arbol_Genealogico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/Arbol_Genealogico.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/BitVector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/BitVector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/ListaSimple.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo_Arbol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo_Arbol.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/grafo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/grafo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/linkedList.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/linkedNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/nodoGrafo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/nodoGrafo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Individuo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Individuo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Mundo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pueblo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pueblo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>

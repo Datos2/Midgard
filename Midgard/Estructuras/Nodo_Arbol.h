@@ -8,7 +8,8 @@
 #ifndef NODO_ARBOL_H
 #define	NODO_ARBOL_H
 
-#include "Individuo.h"
+
+#include "../Individuo.h"
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>

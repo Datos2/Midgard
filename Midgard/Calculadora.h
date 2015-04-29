@@ -8,7 +8,9 @@
 #ifndef CALCULADORA_H
 #define	CALCULADORA_H
 
-#include "Estructuras/BitVector.h" 
+#include "../Midgard/Estructuras/BitVector.h"
+
+//#include "Estructuras/BitVector.h" 
 
 namespace Calculadora{
     int PorcentajeRand(int);

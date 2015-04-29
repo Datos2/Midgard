@@ -8,6 +8,8 @@
 #ifndef BITVECTOR_H
 #define	BITVECTOR_H
 
+#include "ListaSimple.h"
+
 class BitVector{
    ListaSimple<bool> vector;
 public:
