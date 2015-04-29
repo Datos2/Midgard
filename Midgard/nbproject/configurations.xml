@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <logicalFolder name="f1" displayName="Datos" projectFiles="true" kind="ROOT">
-      <itemPath>Datos/Jzon.cpp</itemPath>
-      <itemPath>Datos/Jzon.h</itemPath>
-    </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>Calculadora.h</itemPath>
-      <itemPath>Edda.h</itemPath>
-      <itemPath>Elves.h</itemPath>
-      <itemPath>Individuo.h</itemPath>
-      <itemPath>Mundo.h</itemPath>
-      <itemPath>Pueblo.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -22,24 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Calculadora.cpp</itemPath>
-      <itemPath>Edda.cpp</itemPath>
-      <itemPath>Elves.cpp</itemPath>
-      <itemPath>Individuo.cpp</itemPath>
-      <itemPath>Mundo.cpp</itemPath>
-      <itemPath>Pueblo.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
-    </logicalFolder>
-    <logicalFolder name="TestFiles"
-                   displayName="Test Files"
-                   projectFiles="false"
-                   kind="TEST_LOGICAL_FOLDER">
-    </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false"
-                   kind="IMPORTANT_FILES_FOLDER">
-      <itemPath>Makefile</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -63,34 +36,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Calculadora.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Calculadora.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Datos/Jzon.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Datos/Jzon.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Edda.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Edda.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Elves.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Elves.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Individuo.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Individuo.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Mundo.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Pueblo.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Pueblo.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -114,34 +59,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Calculadora.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Calculadora.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Datos/Jzon.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Datos/Jzon.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Edda.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Edda.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Elves.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Elves.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Individuo.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Individuo.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Mundo.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Pueblo.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Pueblo.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
