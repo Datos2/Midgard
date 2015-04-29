@@ -15,8 +15,8 @@ NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
 CC=gcc
-CCC=c++
-CXX=c++
+CCC=g++
+CXX=g++
 FC=gfortran
 AS=as
 
@@ -35,6 +35,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Calculadora.o \
+	${OBJECTDIR}/Datos/Jzon.o \
+	${OBJECTDIR}/Edda.o \
+	${OBJECTDIR}/Elves.o \
+	${OBJECTDIR}/Individuo.o \
+	${OBJECTDIR}/Mundo.o \
+	${OBJECTDIR}/Pueblo.o \
 	${OBJECTDIR}/main.o
 
 
@@ -61,6 +68,41 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Calculadora.o: Calculadora.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Calculadora.o Calculadora.cpp
+
+${OBJECTDIR}/Datos/Jzon.o: Datos/Jzon.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Datos
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Jzon.o Datos/Jzon.cpp
+
+${OBJECTDIR}/Edda.o: Edda.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Edda.o Edda.cpp
+
+${OBJECTDIR}/Elves.o: Elves.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Elves.o Elves.cpp
+
+${OBJECTDIR}/Individuo.o: Individuo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Individuo.o Individuo.cpp
+
+${OBJECTDIR}/Mundo.o: Mundo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mundo.o Mundo.cpp
+
+${OBJECTDIR}/Pueblo.o: Pueblo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Pueblo.o Pueblo.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
