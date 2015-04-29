@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <logicalFolder name="f1" displayName="Datos" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f1" displayName="Datos" projectFiles="true">
       <itemPath>Datos/Jzon.cpp</itemPath>
       <itemPath>Datos/Jzon.h</itemPath>
+      <itemPath>Datos/read.cpp</itemPath>
+      <itemPath>Datos/read.h</itemPath>
+      <itemPath>Datos/write.cpp</itemPath>
+      <itemPath>Datos/write.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="f2"
-                   displayName="Estructuras"
-                   projectFiles="true"
-                   kind="ROOT">
+    <logicalFolder name="f2" displayName="Estructuras" projectFiles="true">
       <itemPath>Estructuras/Arbol_Genealogico.cpp</itemPath>
       <itemPath>Estructuras/Arbol_Genealogico.h</itemPath>
       <itemPath>Estructuras/BitVector.cpp</itemPath>
@@ -78,6 +79,14 @@
       <item path="Datos/Jzon.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Datos/Jzon.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/read.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Datos/read.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/write.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Datos/write.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Edda.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -157,6 +166,14 @@
       <item path="Datos/Jzon.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Datos/Jzon.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/read.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Datos/read.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/write.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Datos/write.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Edda.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -37,6 +37,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Calculadora.o \
 	${OBJECTDIR}/Datos/Jzon.o \
+	${OBJECTDIR}/Datos/read.o \
+	${OBJECTDIR}/Datos/write.o \
 	${OBJECTDIR}/Edda.o \
 	${OBJECTDIR}/Elves.o \
 	${OBJECTDIR}/Estructuras/Arbol_Genealogico.o \
@@ -83,6 +85,16 @@ ${OBJECTDIR}/Datos/Jzon.o: Datos/Jzon.cpp
 	${MKDIR} -p ${OBJECTDIR}/Datos
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Jzon.o Datos/Jzon.cpp
+
+${OBJECTDIR}/Datos/read.o: Datos/read.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Datos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/read.o Datos/read.cpp
+
+${OBJECTDIR}/Datos/write.o: Datos/write.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Datos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/write.o Datos/write.cpp
 
 ${OBJECTDIR}/Edda.o: Edda.cpp 
 	${MKDIR} -p ${OBJECTDIR}

@@ -1,10 +1,3 @@
-/* 
- * File:   Jzon.h
- * Author: steven
- *
- * Created on April 28, 2015, 4:15 PM
- */
-
 #ifndef JZON_H
 #define	JZON_H
 
