@@ -36,9 +36,17 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Calculadora.o \
+	${OBJECTDIR}/DarkElves.o \
 	${OBJECTDIR}/Datos/Jzon.o \
+	${OBJECTDIR}/Dwarves.o \
 	${OBJECTDIR}/Edda.o \
 	${OBJECTDIR}/Elves.o \
+	${OBJECTDIR}/Estructuras/Arbol_Genealogico.o \
+	${OBJECTDIR}/Estructuras/BitVector.o \
+	${OBJECTDIR}/Estructuras/Nodo_Arbol.o \
+	${OBJECTDIR}/Estructuras/grafo.o \
+	${OBJECTDIR}/Estructuras/nodoGrafo.o \
+	${OBJECTDIR}/Giants.o \
 	${OBJECTDIR}/Individuo.o \
 	${OBJECTDIR}/Mundo.o \
 	${OBJECTDIR}/Pueblo.o \
@@ -74,10 +82,20 @@ ${OBJECTDIR}/Calculadora.o: Calculadora.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Calculadora.o Calculadora.cpp
 
+${OBJECTDIR}/DarkElves.o: DarkElves.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DarkElves.o DarkElves.cpp
+
 ${OBJECTDIR}/Datos/Jzon.o: Datos/Jzon.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Datos
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Jzon.o Datos/Jzon.cpp
+
+${OBJECTDIR}/Dwarves.o: Dwarves.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Dwarves.o Dwarves.cpp
 
 ${OBJECTDIR}/Edda.o: Edda.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -88,6 +106,36 @@ ${OBJECTDIR}/Elves.o: Elves.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Elves.o Elves.cpp
+
+${OBJECTDIR}/Estructuras/Arbol_Genealogico.o: Estructuras/Arbol_Genealogico.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Estructuras
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/Arbol_Genealogico.o Estructuras/Arbol_Genealogico.cpp
+
+${OBJECTDIR}/Estructuras/BitVector.o: Estructuras/BitVector.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Estructuras
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/BitVector.o Estructuras/BitVector.cpp
+
+${OBJECTDIR}/Estructuras/Nodo_Arbol.o: Estructuras/Nodo_Arbol.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Estructuras
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/Nodo_Arbol.o Estructuras/Nodo_Arbol.cpp
+
+${OBJECTDIR}/Estructuras/grafo.o: Estructuras/grafo.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Estructuras
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/grafo.o Estructuras/grafo.cpp
+
+${OBJECTDIR}/Estructuras/nodoGrafo.o: Estructuras/nodoGrafo.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Estructuras
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/nodoGrafo.o Estructuras/nodoGrafo.cpp
+
+${OBJECTDIR}/Giants.o: Giants.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Giants.o Giants.cpp
 
 ${OBJECTDIR}/Individuo.o: Individuo.cpp 
 	${MKDIR} -p ${OBJECTDIR}
