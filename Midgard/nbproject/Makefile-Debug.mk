@@ -35,9 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/grafo.o \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/nodoGrafo.o
+	${OBJECTDIR}/Calculadora.o \
+	${OBJECTDIR}/Datos/Jzon.o \
+	${OBJECTDIR}/Edda.o \
+	${OBJECTDIR}/Elves.o \
+	${OBJECTDIR}/Individuo.o \
+	${OBJECTDIR}/Mundo.o \
+	${OBJECTDIR}/Pueblo.o \
+	${OBJECTDIR}/main.o
 
 
 # C Compiler Flags
@@ -64,20 +69,45 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/grafo.o: grafo.cpp 
+${OBJECTDIR}/Calculadora.o: Calculadora.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/grafo.o grafo.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Calculadora.o Calculadora.cpp
+
+${OBJECTDIR}/Datos/Jzon.o: Datos/Jzon.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Datos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Jzon.o Datos/Jzon.cpp
+
+${OBJECTDIR}/Edda.o: Edda.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Edda.o Edda.cpp
+
+${OBJECTDIR}/Elves.o: Elves.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Elves.o Elves.cpp
+
+${OBJECTDIR}/Individuo.o: Individuo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Individuo.o Individuo.cpp
+
+${OBJECTDIR}/Mundo.o: Mundo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mundo.o Mundo.cpp
+
+${OBJECTDIR}/Pueblo.o: Pueblo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Pueblo.o Pueblo.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
-
-${OBJECTDIR}/nodoGrafo.o: nodoGrafo.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/nodoGrafo.o nodoGrafo.cpp
 
 # Subprojects
 .build-subprojects:
