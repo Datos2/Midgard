@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include "Datos/write.h"
 #include "Datos/read.h"
+#include "Datos/Xml.h"
 
 using namespace std;
 

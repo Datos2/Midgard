@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ldmm>
+<vheap>
+<size>100</size>
+<overweight>0.5</overweight>
+</vheap>
+
+<vmalloc>
+<strtype>string</strtype>
+</vmalloc>
+
+<vfree>
+<tofree>60</tofree>
+</vfree>
+
+<dumpfrecuency>100</dumpfrecuency>
+<dumppath>0</dumppath>
+
+<vdebug>true</vdebug>
+<vdebugfilepath></vdebugfilepath>
+<gc-frecuency>10</gc-frecuency>
+</ldmm>

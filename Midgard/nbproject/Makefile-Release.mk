@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Calculadora.o \
 	${OBJECTDIR}/Datos/Jzon.o \
+	${OBJECTDIR}/Datos/Xml.o \
 	${OBJECTDIR}/Datos/read.o \
 	${OBJECTDIR}/Datos/write.o \
 	${OBJECTDIR}/Edda.o \
@@ -49,6 +50,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/Individuo.o \
 	${OBJECTDIR}/Mundo.o \
 	${OBJECTDIR}/Pueblo.o \
+	${OBJECTDIR}/TinyXmlLib/tinystr.o \
+	${OBJECTDIR}/TinyXmlLib/tinyxml.o \
+	${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o \
+	${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o \
 	${OBJECTDIR}/main.o
 
 
@@ -85,6 +90,11 @@ ${OBJECTDIR}/Datos/Jzon.o: Datos/Jzon.cpp
 	${MKDIR} -p ${OBJECTDIR}/Datos
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Jzon.o Datos/Jzon.cpp
+
+${OBJECTDIR}/Datos/Xml.o: Datos/Xml.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Datos
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Xml.o Datos/Xml.cpp
 
 ${OBJECTDIR}/Datos/read.o: Datos/read.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Datos
@@ -145,6 +155,26 @@ ${OBJECTDIR}/Pueblo.o: Pueblo.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Pueblo.o Pueblo.cpp
+
+${OBJECTDIR}/TinyXmlLib/tinystr.o: TinyXmlLib/tinystr.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinystr.o TinyXmlLib/tinystr.cpp
+
+${OBJECTDIR}/TinyXmlLib/tinyxml.o: TinyXmlLib/tinyxml.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinyxml.o TinyXmlLib/tinyxml.cpp
+
+${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o: TinyXmlLib/tinyxmlerror.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o TinyXmlLib/tinyxmlerror.cpp
+
+${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o: TinyXmlLib/tinyxmlparser.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o TinyXmlLib/tinyxmlparser.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
