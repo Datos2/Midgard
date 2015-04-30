@@ -9,13 +9,15 @@
 #define	BITVECTOR_H
 
 class BitVector{
-   ListaSimple<bool> vector;
+   char* vector;
 public:
     BitVector(int);
+    BitVector();
     int getNum();
-    void setBits();
-    ListaSimple<bool> getBits();
+    void setBits(char*);
+    char* getBits();
+    int BitsToNum(char*);
+    char* NumToBits(int);
 };
-
 #endif	/* BITVECTOR_H */
 

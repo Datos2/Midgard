@@ -1,11 +1,26 @@
-#include "Calculadora.h"
-/*
-int Calculadora::PorcentajeRand(int porcentaje){
-    int porc=rand()% porcentaje;
-    return porc;
-}*/
-void Calculadora::NumToBytes(int pnum,char* point){
+BitVector::BitVector(int pnum){
+    //vector=NumToBits(pnum);}
+   
+}
+BitVector::BitVector(){
+    
+}
+int BitVector::getNum(){
+    
+}
+void BitVector::setBits(char* pvector){
+    vector=pvector;
+}
+char* BitVector::getBits(){
+    
+}
+
+void BitVector::NumToBits(int pnum,char* point){
     char respuesta[32];
+    for(int i=0; i < 32; ++i){
+    respuesta[i] = '0';
+  }
+    
     int i=31;
     while(pnum>0 and i>=0){
         if(pnum%2==1){
@@ -33,20 +48,24 @@ void Calculadora::NumToBytes(int pnum,char* point){
   }
 }
 
-int Calculadora::BytesToNum(char* bit){
-    bool primer=false;
+int BitVector::BitsToNum(char* bit){
+    bool primer=true;
     int num=1;
     for(int i=0;i<32;i++){
-        if(bit[i]=='1'){
-            for(i+1;i<32;i++){
+        if(bit[i]=='1'and primer ){
+            primer=false;
+            cout<<"este es el primer 1  "<<i<<endl;
+            i++;
+            for(i;i<32;i++){
                 if(bit[i]=='0'){
                     num=num*2;
                 }
                 else if(bit[i]=='1'){
                     num=(num*2)+1;
                 }
+                cout<<"este es el num  "<<num<<endl;
             }
-            break;
+            
         }
     }
     return num;
