@@ -1,17 +1,14 @@
-/* 
- * File:   DarkElves.h
- * Author: steven
- *
- * Created on April 28, 2015, 6:21 PM
- */
 
 #ifndef DARKELVES_H
 #define	DARKELVES_H
+#include "Individuo.h"
 
-class DarkElves {
+class DarkElves: public Individuo{
 public:
     DarkElves();
     ~DarkElves();
+    bool EdadMuerte();
+    bool EdadParaPelea();
 private:
 
 };

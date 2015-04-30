@@ -1,11 +1,14 @@
 
 #ifndef ELVES_H
 #define	ELVES_H
+#include "Individuo.h"
 
-class Elves{
+class Elves: public Individuo{
 public:
     Elves();   
-    virtual ~Elves();
+    ~Elves();
+    bool EdadMuerte();
+    bool EdadParaPelea();
 private:
 
 };

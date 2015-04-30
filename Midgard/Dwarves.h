@@ -1,17 +1,14 @@
-/* 
- * File:   Dwarves.h
- * Author: steven
- *
- * Created on April 28, 2015, 6:18 PM
- */
+
 
 #ifndef DWARVES_H
 #define	DWARVES_H
-
-class Dwarves {
+#include "Individuo.h"
+class Dwarves: public Individuo {
 public:
     Dwarves();
     ~Dwarves();
+    bool EdadMuerte();
+    bool EdadParaPelea();
 private:
     
 };

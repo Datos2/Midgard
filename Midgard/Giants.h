@@ -1,18 +1,15 @@
-/* 
- * File:   Giants.h
- * Author: steven
- *
- * Created on April 28, 2015, 6:22 PM
- */
+
 
 #ifndef GIANTS_H
 #define	GIANTS_H
+#include "Individuo.h"
 
-class Giants {
+class Giants:public Individuo{
 public:
     Giants();
-    Giants(const Giants& orig);
-    virtual ~Giants();
+    ~Giants();
+    bool EdadMuerte();
+    bool EdadParaPelea();
 private:
 
 };

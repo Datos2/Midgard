@@ -1,8 +1,5 @@
 #include "Arbol_Genealogico.h"
 
-
-
-
 Arbol_Genealogico::Arbol_Genealogico(){
     
 }

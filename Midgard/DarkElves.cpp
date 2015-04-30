@@ -1,9 +1,4 @@
-/* 
- * File:   DarkElves.cpp
- * Author: steven
- * 
- * Created on April 28, 2015, 6:21 PM
- */
+ 
 
 #include "DarkElves.h"
 
@@ -14,3 +9,9 @@ DarkElves::DarkElves() {
 DarkElves::~DarkElves() {
 }
 
+bool DarkElves::EdadMuerte(){//muere si tiene alcanza limite de edad.
+    return this->edad==120; 
+}
+bool DarkElves::EdadParaPelea(){
+    return this->edad==20;
+}

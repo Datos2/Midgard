@@ -3,6 +3,7 @@
 #include "Edda.h"
 
 Edda::Edda() {
+    
 }
 
 Edda::~Edda() {

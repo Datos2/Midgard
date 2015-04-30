@@ -35,9 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Armas.o \
+	${OBJECTDIR}/Barbara.o \
+	${OBJECTDIR}/Batalla.o \
 	${OBJECTDIR}/Calculadora.o \
+	${OBJECTDIR}/CienciaTecnologia.o \
 	${OBJECTDIR}/DarkElves.o \
 	${OBJECTDIR}/Datos/Jzon.o \
+	${OBJECTDIR}/Datos/Xml.o \
 	${OBJECTDIR}/Dwarves.o \
 	${OBJECTDIR}/Edda.o \
 	${OBJECTDIR}/Elves.o \
@@ -46,10 +51,17 @@ OBJECTFILES= \
 	${OBJECTDIR}/Estructuras/Nodo_Arbol.o \
 	${OBJECTDIR}/Estructuras/grafo.o \
 	${OBJECTDIR}/Estructuras/nodoGrafo.o \
+	${OBJECTDIR}/FeSupersticion.o \
 	${OBJECTDIR}/Giants.o \
 	${OBJECTDIR}/Individuo.o \
 	${OBJECTDIR}/Mundo.o \
 	${OBJECTDIR}/Pueblo.o \
+	${OBJECTDIR}/Supremacia.o \
+	${OBJECTDIR}/TinyXmlLib/tinystr.o \
+	${OBJECTDIR}/TinyXmlLib/tinyxml.o \
+	${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o \
+	${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o \
+	${OBJECTDIR}/UnionPueblos.o \
 	${OBJECTDIR}/main.o
 
 
@@ -77,10 +89,30 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Armas.o: Armas.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Armas.o Armas.cpp
+
+${OBJECTDIR}/Barbara.o: Barbara.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Barbara.o Barbara.cpp
+
+${OBJECTDIR}/Batalla.o: Batalla.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Batalla.o Batalla.cpp
+
 ${OBJECTDIR}/Calculadora.o: Calculadora.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Calculadora.o Calculadora.cpp
+
+${OBJECTDIR}/CienciaTecnologia.o: CienciaTecnologia.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CienciaTecnologia.o CienciaTecnologia.cpp
 
 ${OBJECTDIR}/DarkElves.o: DarkElves.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -91,6 +123,11 @@ ${OBJECTDIR}/Datos/Jzon.o: Datos/Jzon.cpp
 	${MKDIR} -p ${OBJECTDIR}/Datos
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Jzon.o Datos/Jzon.cpp
+
+${OBJECTDIR}/Datos/Xml.o: Datos/Xml.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Datos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Xml.o Datos/Xml.cpp
 
 ${OBJECTDIR}/Dwarves.o: Dwarves.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -132,6 +169,11 @@ ${OBJECTDIR}/Estructuras/nodoGrafo.o: Estructuras/nodoGrafo.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/nodoGrafo.o Estructuras/nodoGrafo.cpp
 
+${OBJECTDIR}/FeSupersticion.o: FeSupersticion.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FeSupersticion.o FeSupersticion.cpp
+
 ${OBJECTDIR}/Giants.o: Giants.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -151,6 +193,36 @@ ${OBJECTDIR}/Pueblo.o: Pueblo.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Pueblo.o Pueblo.cpp
+
+${OBJECTDIR}/Supremacia.o: Supremacia.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Supremacia.o Supremacia.cpp
+
+${OBJECTDIR}/TinyXmlLib/tinystr.o: TinyXmlLib/tinystr.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinystr.o TinyXmlLib/tinystr.cpp
+
+${OBJECTDIR}/TinyXmlLib/tinyxml.o: TinyXmlLib/tinyxml.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinyxml.o TinyXmlLib/tinyxml.cpp
+
+${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o: TinyXmlLib/tinyxmlerror.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o TinyXmlLib/tinyxmlerror.cpp
+
+${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o: TinyXmlLib/tinyxmlparser.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o TinyXmlLib/tinyxmlparser.cpp
+
+${OBJECTDIR}/UnionPueblos.o: UnionPueblos.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/UnionPueblos.o UnionPueblos.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

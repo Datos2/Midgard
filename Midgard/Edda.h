@@ -6,9 +6,9 @@
 class Edda {
 public:
     Edda();
-    ~Edda();
-    void SetDuracion(int duracion);
-    int GetDuracion();
+    virtual ~Edda();
+    virtual void SetDuracion(int duracion);
+    virtual int GetDuracion();
 private:
     int duracion;
     

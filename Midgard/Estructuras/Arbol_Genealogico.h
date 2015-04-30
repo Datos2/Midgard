@@ -12,7 +12,7 @@
 #include <cstdio>
 #include "Nodo_Arbol.h"
 #include "ListaSimple.h"
-#include "Individuo.h"
+#include "../Individuo.h"
 
 using namespace std;
 
