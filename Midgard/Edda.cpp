@@ -1,5 +1,4 @@
 
-
 #include "Edda.h"
 
 Edda::Edda() {
