@@ -19,8 +19,8 @@ using namespace std;
 class Arbol_Genealogico {//clase lista
 private:
     int num_Pobl;//num de pobladores actuales
-    ListaSimple<Nodo_Arbol*> poblacionActual;
-    ListaSimple<Nodo_Arbol> poblacionTotal;
+    ListaSimple<Nodo_Arbol*>* poblacionActual;
+    ListaSimple<Nodo_Arbol>* poblacionTotal;
     
 public://se definen los metodos publicos
 

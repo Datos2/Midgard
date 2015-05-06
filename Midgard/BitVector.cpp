@@ -1,72 +1,94 @@
-BitVector::BitVector(int pnum){
-    //vector=NumToBits(pnum);}
-   
+#include "BitVector.h"
+
+
+// int size .... bits
+//
+// chrVector[size/8];
+// _size = size;
+//
+
+BitVector::BitVector(int pSize){
+    int intVector[8];
+    vector=intVector;
+    _size = pSize;
 }
 BitVector::BitVector(){
-    
-}
-int BitVector::getNum(){
-    
-}
-void BitVector::setBits(char* pvector){
-    vector=pvector;
-}
-char* BitVector::getBits(){
-    
+    int intVector[8];
+    vector=intVector;
+    _size=8*(32);
 }
 
-void BitVector::NumToBits(int pnum,char* point){
-    char respuesta[32];
-    for(int i=0; i < 32; ++i){
-    respuesta[i] = '0';
-  }
+void BitVector::initBitVector(int * pInitValue){
     
-    int i=31;
-    while(pnum>0 and i>=0){
-        if(pnum%2==1){
-            respuesta[i]='1';
+    for (int i=0;i< 8;i++){
+        cout<<i<<endl;
+        cout<<"value del pInit "<<*(pInitValue+i)<<endl;
+        if(i!=3){
+        setNum(*(pInitValue+i),i);
         }
-        if(pnum%2==0){
-            respuesta[i]='0';
-        }
-        if(pnum/2<int(pnum/2)){
-            pnum=int(pnum/2)-1;
-        }
-        else if(pnum/2>int(pnum/2)){
-            pnum=int(pnum/2);
-        }
-        else if(pnum/2==int(pnum/2)){
-            pnum=pnum/2;
-        }
+        cout<<i<<endl;
+    }
+    //cout<<"i final "<<i<<" i final"<<endl;
+}
+
+
+
+bool BitVector::setBit(int pBitNum){
+    if(pBitNum < _size) // 64 0 63
+        return false;
+    else{
+        int chr_index = pBitNum/(8*4);// indice del arreglo
+        int bit_index = pBitNum%(8*4);// indice del bit 
         
-        cout<<"este es el bit "<<i<<"->"<<respuesta[i]<<endl<<"este es el num"<<pnum<<endl;
-        i--;
-
+        char indice = vector[chr_index];
+        char mask = 0x01;
+        mask = mask << bit_index;
+        indice = indice^mask;
+        vector[chr_index]=indice;
+        return true;
     }
-    for(int i=0; i < 32; ++i){
-    point[i] = respuesta[i];
-  }
 }
 
-int BitVector::BitsToNum(char* bit){
-    bool primer=true;
-    int num=1;
-    for(int i=0;i<32;i++){
-        if(bit[i]=='1'and primer ){
-            primer=false;
-            cout<<"este es el primer 1  "<<i<<endl;
-            i++;
-            for(i;i<32;i++){
-                if(bit[i]=='0'){
-                    num=num*2;
-                }
-                else if(bit[i]=='1'){
-                    num=(num*2)+1;
-                }
-                cout<<"este es el num  "<<num<<endl;
-            }
-            
-        }
+bool BitVector::getBit(int pBitNum){
+    if(pBitNum < _size) // 64 0 63
+        return false;
+    else{
+        int chr_index = pBitNum/(8*4);// indice del arreglo
+        int bit_index = pBitNum%(8*4);// indice del bit 
+        
+        char indice = vector[chr_index];
+        char mask = 0x01;
+        mask = mask << bit_index;
+        
+        indice = indice&mask;
+        if(indice == 0x00)
+            return false;
+        else
+            return true;
     }
-    return num;
+}
+
+
+
+
+
+
+
+
+int* BitVector::getBits(){
+    return vector;
+}
+
+void BitVector::setNum(int pnum,int pos){
+        cout<<"pos "<<pos<<endl;
+        cout<<"pnum "<<pnum<<endl;
+        *(vector+pos)=pnum;
+        cout<<"vector "<<*(vector+pos)<<endl;
+}
+
+int BitVector::getValue(int crom){
+    
+   
+        return this->vector[crom];
+    
 }

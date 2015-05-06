@@ -8,16 +8,27 @@
 #ifndef BITVECTOR_H
 #define	BITVECTOR_H
 
+//#include <iostream>
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
 class BitVector{
-   char* vector;
+   //int* vector;
+   int _size;
 public:
+    int* vector;
     BitVector(int);
     BitVector();
-    int getNum();
-    void setBits(char*);
-    char* getBits();
-    int BitsToNum(char*);
-    char* NumToBits(int);
+    
+    void initBitVector(int *);
+    
+    bool setBit(int pBitNum);
+    bool getBit(int pBitNum);
+    void setNum(int,int);
+    int* getBits();
+    int getValue(int);
+
 };
 #endif	/* BITVECTOR_H */
 

@@ -2,35 +2,36 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "Calculadora.h"
+
 #include "BitVector.h"
+#include "Individuo.h"
+#include "Arbol_Genealogico.h"
+#include "reproduccion.h"
 using namespace std;
+using namespace reproduccion;
 //using namespace Calculadora;
 
 
 
 int main(int argc, char** argv) {
-
-    /*
-    void * bitVector=calloc(8,1);
-    int* bitVector1=(int*) bitVector;
-    bitVector1[0]=0x0F;
-    bitVector1[1]=0x10;
-    int bit=bitVector1[0]&bitVector1[1];
-    cout<<bit<<endl;*/
-
-    char a[32];
-    BitVector bit1;
+    BitVector x1(8*32);
+    //BitVector x2(8*(8*4));
+    int bc1[8]={0};
+    int* bc2=bc1;
+    for(int i=0;i<8;i++){
+        bc2[i]=0x0F;
+    }
+  
+    //cout<<*(bc2);
+    x1.initBitVector(bc2);
     
-    //NumToBytes(131,a);
-    //int b=BytesToNum(a);
-    //cout<<b;
-                     
-    //a[0]='1';
-    //char b[8]={0};
-    //b[0]='0';
-    //char c=a[0]|b[0];
-    //cout<<c;
-    return 0;
+    //x2.initBitVector(bc2);
+    //Individuo Javier("Guerrero");
+    //Individuo Magda("Sacerdotisa");
+    //cout<<x1.getValue(0)<<"    "<<bc1[0];
+    //Individuo Bebe=reproduccion::cruce(2345,Javier,Magda);
+    //cout<<(int)Javier.getHP();
+    //Arbol_Genealogico* myArbol=new Arbol_Genealogico();
+    //myArbol->nuevoIndividuo(Javier);
 }
 

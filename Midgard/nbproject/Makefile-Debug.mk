@@ -37,9 +37,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Arbol_Genealogico.o \
 	${OBJECTDIR}/BitVector.o \
-	${OBJECTDIR}/Calculadora.o \
+	${OBJECTDIR}/Individuo.o \
 	${OBJECTDIR}/Nodo_Arbol.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/reproduccion.o
 
 
 # C Compiler Flags
@@ -76,10 +77,10 @@ ${OBJECTDIR}/BitVector.o: BitVector.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BitVector.o BitVector.cpp
 
-${OBJECTDIR}/Calculadora.o: Calculadora.cpp 
+${OBJECTDIR}/Individuo.o: Individuo.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Calculadora.o Calculadora.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Individuo.o Individuo.cpp
 
 ${OBJECTDIR}/Nodo_Arbol.o: Nodo_Arbol.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -90,6 +91,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/reproduccion.o: reproduccion.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/reproduccion.o reproduccion.cpp
 
 # Subprojects
 .build-subprojects:
