@@ -1,21 +1,12 @@
-/* 
- * File:   main.cpp
- * Author: luisrbrenes
- *
- * Created on April 24, 2015, 7:57 PM
- */
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+#include "readSerial.h"
 
-#include <cstdlib>
 
-using namespace std;
-
-/*
- * 
- */
-int main(int argc, char** argv) {
-
-    
-    //prueba
-    return 0;
+int main()
+{
+    readSerial r;
+    r.leerSerial();
+	return 0;
 }
-
