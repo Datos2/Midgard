@@ -22,7 +22,7 @@ void BitVector::initBitVector(int * pInitValue){
     
     for (int i=0;i< 8;i++){
         cout<<i<<endl;
-        cout<<"value del pInit "<<*(pInitValue+i)<<endl;
+        //cout<<"value del pInit "<<*(pInitValue+i)<<endl;
         if(i!=3){
         setNum(*(pInitValue+i),i);
         }
@@ -80,10 +80,10 @@ int* BitVector::getBits(){
 }
 
 void BitVector::setNum(int pnum,int pos){
-        cout<<"pos "<<pos<<endl;
-        cout<<"pnum "<<pnum<<endl;
+        //cout<<"pos "<<pos<<endl;
+        //cout<<"pnum "<<pnum<<endl;
         *(vector+pos)=pnum;
-        cout<<"vector "<<*(vector+pos)<<endl;
+        //cout<<"vector "<<*(vector+pos)<<endl;
 }
 
 int BitVector::getValue(int crom){

@@ -15,6 +15,7 @@ using namespace reproduccion;
 
 int main(int argc, char** argv) {
     BitVector x1(8*32);
+    cout<<(int)x1.vector[3]<<endl;
     //BitVector x2(8*(8*4));
     int bc1[8]={0};
     int* bc2=bc1;
@@ -23,7 +24,8 @@ int main(int argc, char** argv) {
     }
   
     //cout<<*(bc2);
-    x1.initBitVector(bc2);
+    //x1.initBitVector(bc2);
+    
     
     //x2.initBitVector(bc2);
     //Individuo Javier("Guerrero");
