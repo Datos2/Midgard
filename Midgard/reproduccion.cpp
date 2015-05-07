@@ -31,7 +31,7 @@ Individuo reproduccion::cruce(int rand,Individuo pPadre1,Individuo pPadre2){
 int reproduccion::makeMask1(int index){
     int num=0;
     int bit=0x01;
-    for(int i=0;i<index;i++){
+    for(int i=0;i<=index;i++){
         num^=bit<<i;
     }
     return num;

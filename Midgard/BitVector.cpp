@@ -8,14 +8,19 @@
 //
 
 BitVector::BitVector(int pSize){
-    int intVector[8];
-    vector=intVector;
+    vector= new int[pSize/32];
     _size = pSize;
+    for(int i=0;i<8;i++){
+        vector[i]=0;
+    }
+    
 }
 BitVector::BitVector(){
-    int intVector[8];
-    vector=intVector;
-    _size=8*(32);
+    vector= new int[8];
+    _size = 32*4;
+    for(int i=0;i<8;i++){
+        vector[i]=0;
+    }
 }
 
 void BitVector::initBitVector(int * pInitValue){
@@ -23,10 +28,10 @@ void BitVector::initBitVector(int * pInitValue){
     for (int i=0;i< 8;i++){
         cout<<i<<endl;
         //cout<<"value del pInit "<<*(pInitValue+i)<<endl;
-        if(i!=3){
-        setNum(*(pInitValue+i),i);
-        }
-        cout<<i<<endl;
+        
+        vector[i]=*(pInitValue+i);
+        
+        //cout<<i<<endl;
     }
     //cout<<"i final "<<i<<" i final"<<endl;
 }

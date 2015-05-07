@@ -15,17 +15,19 @@ using namespace reproduccion;
 
 int main(int argc, char** argv) {
     BitVector x1(8*32);
-    cout<<(int)x1.vector[3]<<endl;
-    //BitVector x2(8*(8*4));
-    int bc1[8]={0};
-    int* bc2=bc1;
-    for(int i=0;i<8;i++){
-        bc2[i]=0x0F;
-    }
-  
-    //cout<<*(bc2);
-    //x1.initBitVector(bc2);
     
+    
+    BitVector x2(8*(8*4));
+    int* bc1=new int[8];
+    for(int i=0;i<8;i++){
+        bc1[i]=0x0F;
+    }
+     
+    //cout<<*(bc2);
+    x1.initBitVector(bc1);
+    int ba=makeMask2(2);
+    int a=1;
+    cout<<"ba "<<(a)<<endl;
     
     //x2.initBitVector(bc2);
     //Individuo Javier("Guerrero");
