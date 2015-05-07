@@ -13,6 +13,8 @@ namespace reproduccion{
     int makeMask1(int);
     int makeMask2(int);
     int seekFirstBit(int);
+    int mutate(int,int);
+    int inversion(int);
 };
 
 #endif	/* REPRODUCCION_H */

@@ -7,9 +7,9 @@ class Individuo {
 public:
     Individuo();
     Individuo(string);
-    Individuo(string,BitVector);
+    Individuo(string,BitVector*);
     //~Criatura();
-    BitVector getBitVector();
+    BitVector* getBitVector();
     int getId();
     string getTipo();
     void setHP(int);
@@ -31,7 +31,7 @@ public:
     
 protected:
     static int idCriat;///variable contador para ir poniendo el id
-    BitVector _stats;//vida,velocidad,defensa,inteligencia,magia,energia_vital,blot,runes
+    BitVector* _stats;//vida,velocidad,defensa,inteligencia,magia,energia_vital,blot,runes
     int id,edad,experiencia;
     bool genero;
     string tipo;//ya sea defensa,atacante,hechicero, entre otros.

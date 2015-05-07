@@ -22,8 +22,7 @@ public:
     BitVector();
     
     void initBitVector(int *);
-    
-    bool setBit(int pBitNum);
+   
     bool getBit(int pBitNum);
     void setNum(int,int);
     int* getBits();

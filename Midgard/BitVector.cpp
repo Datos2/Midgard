@@ -26,7 +26,7 @@ BitVector::BitVector(){
 void BitVector::initBitVector(int * pInitValue){
     
     for (int i=0;i< 8;i++){
-        cout<<i<<endl;
+        //cout<<i<<endl;
         //cout<<"value del pInit "<<*(pInitValue+i)<<endl;
         
         vector[i]=*(pInitValue+i);
@@ -38,21 +38,7 @@ void BitVector::initBitVector(int * pInitValue){
 
 
 
-bool BitVector::setBit(int pBitNum){
-    if(pBitNum < _size) // 64 0 63
-        return false;
-    else{
-        int chr_index = pBitNum/(8*4);// indice del arreglo
-        int bit_index = pBitNum%(8*4);// indice del bit 
-        
-        char indice = vector[chr_index];
-        char mask = 0x01;
-        mask = mask << bit_index;
-        indice = indice^mask;
-        vector[chr_index]=indice;
-        return true;
-    }
-}
+
 
 bool BitVector::getBit(int pBitNum){
     if(pBitNum < _size) // 64 0 63
