@@ -3,7 +3,7 @@
 int readSerial::leerSerial(){
     char serialPortFilename[] = "/dev/ttyACM0";
             int i;
-        char readBuffer[4];
+        char readBuffer[1024];
 
     FILE *serPort = fopen(serialPortFilename, "r");
 
@@ -15,11 +15,10 @@ int readSerial::leerSerial(){
     
 	memset(readBuffer, 0, 1024);
 	fread(readBuffer, sizeof(char),1024,serPort);
-	if(sizeof(readBuffer) != 0)
-	{
 
-            sscanf(readBuffer, "%d", &i);
-            std::cout<<i<<std::endl;
-	}
+
+        sscanf(readBuffer, "%d", &i);
+        std::cout<<i<<std::endl;
+	
         return i;
 }
