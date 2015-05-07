@@ -7,9 +7,10 @@
 class Barbara: public Edda {
 public:
     Barbara();
-    virtual ~Barbara();
+    ~Barbara();
+    void setArmas();
 private:
-
+    
 };
 
 #endif	/* BARBARA_H */

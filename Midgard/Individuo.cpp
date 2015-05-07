@@ -3,7 +3,8 @@
 using namespace std;
 
 int Individuo::idCriat=1;
-Individuo::Individuo() {
+Individuo::Individuo(){  
+    
 }
 Individuo::~Individuo() {
 }
@@ -138,7 +139,7 @@ int Individuo::GetIdCriat() {
     return idCriat;
 }
 
-void Individuo::EdadMuerte(){
-    
-}
 
+bool Individuo::EdadMuerte(){}
+
+bool Individuo::EdadParaPelea(){}

@@ -17,3 +17,13 @@ int Edda::GetDuracion(){
     return duracion;
 }
 
+void Edda::setArmas(){}
+
+void Edda::SetArmas_edda(ListaSimple<Armas> armas_edda) {
+    this->armas_edda = armas_edda;
+}
+
+ListaSimple<Armas> Edda::GetArmas_edda(){
+    return armas_edda;
+}
+

@@ -48,7 +48,7 @@ const char* Xml::read(const char* pchar){//se busca pchar.
 			cout<<"no"<<endl;
 		}
 		elemento_actual = elemento_actual->NextSiblingElement();//sigue recorriendo los elementos.
-	}return elemento_actual->ValueStr().c_str();//retorna elemento.
+	}return elemento_actual->ValueTStr().c_str();//retorna elemento.
 }
 
 
@@ -60,12 +60,12 @@ const char* Xml::printElements(){//se imprimen los elementos.
 			cout<<elemento_actual->GetText()<<endl;
 		}
 		elemento_actual =elemento_actual->NextSiblingElement();//sigue recorriendo los elementos.
-	}return elemento_actual->ValueStr().c_str();//retorna elemento.
+	}return elemento_actual->ValueTStr().c_str();//retorna elemento.
 }
 
 //retorna una lista con los elementos de xml.
 ListaSimple<const char*> Xml::getElements(){//mete en una lista los elementos del xml.
-	ListaSimple<const char*> lista;
+	ListaSimple<const char*> lista=ListaSimple<const char*>();     
 	TiXmlElement *elemento_actual =file.RootElement()->FirstChildElement();//define la variable como el primer hijo de la raiz
 
 	while (elemento_actual!= NULL){		//y compara si el parametro coincide con lo que se busca.

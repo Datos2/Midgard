@@ -8,7 +8,7 @@
 #ifndef XML_H_
 #define XML_H_
 #include <iostream>
-#include "tinyxml.h"
+#include "../TinyXmlLib/tinyxml.h"
 #include "../Estructuras/ListaSimple.h"
 /*
  * se crea la clase para el manejo de archivos xml.

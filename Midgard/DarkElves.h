@@ -6,6 +6,7 @@
 class DarkElves: public Individuo{
 public:
     DarkElves();
+    DarkElves(string);
     ~DarkElves();
     bool EdadMuerte();
     bool EdadParaPelea();
