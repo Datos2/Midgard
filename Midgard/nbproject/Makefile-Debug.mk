@@ -35,18 +35,15 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Calculadora.o \
 	${OBJECTDIR}/Datos/Jzon.o \
 	${OBJECTDIR}/Datos/Xml.o \
-	${OBJECTDIR}/Datos/read.o \
-	${OBJECTDIR}/Datos/write.o \
+	${OBJECTDIR}/Datos/jsonReader.o \
+	${OBJECTDIR}/Datos/jsonWriter.o \
 	${OBJECTDIR}/Edda.o \
 	${OBJECTDIR}/Elves.o \
 	${OBJECTDIR}/Estructuras/Arbol_Genealogico.o \
 	${OBJECTDIR}/Estructuras/BitVector.o \
 	${OBJECTDIR}/Estructuras/Nodo_Arbol.o \
-	${OBJECTDIR}/Estructuras/grafo.o \
-	${OBJECTDIR}/Estructuras/nodoGrafo.o \
 	${OBJECTDIR}/Individuo.o \
 	${OBJECTDIR}/Mundo.o \
 	${OBJECTDIR}/Pueblo.o \
@@ -54,7 +51,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/TinyXmlLib/tinyxml.o \
 	${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o \
 	${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/jsonReader.o \
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/reproduccion.o
 
 
 # C Compiler Flags
@@ -81,11 +80,6 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Calculadora.o: Calculadora.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Calculadora.o Calculadora.cpp
-
 ${OBJECTDIR}/Datos/Jzon.o: Datos/Jzon.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Datos
 	${RM} "$@.d"
@@ -96,15 +90,15 @@ ${OBJECTDIR}/Datos/Xml.o: Datos/Xml.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Xml.o Datos/Xml.cpp
 
-${OBJECTDIR}/Datos/read.o: Datos/read.cpp 
+${OBJECTDIR}/Datos/jsonReader.o: Datos/jsonReader.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Datos
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/read.o Datos/read.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/jsonReader.o Datos/jsonReader.cpp
 
-${OBJECTDIR}/Datos/write.o: Datos/write.cpp 
+${OBJECTDIR}/Datos/jsonWriter.o: Datos/jsonWriter.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Datos
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/write.o Datos/write.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/jsonWriter.o Datos/jsonWriter.cpp
 
 ${OBJECTDIR}/Edda.o: Edda.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -130,16 +124,6 @@ ${OBJECTDIR}/Estructuras/Nodo_Arbol.o: Estructuras/Nodo_Arbol.cpp
 	${MKDIR} -p ${OBJECTDIR}/Estructuras
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/Nodo_Arbol.o Estructuras/Nodo_Arbol.cpp
-
-${OBJECTDIR}/Estructuras/grafo.o: Estructuras/grafo.cpp 
-	${MKDIR} -p ${OBJECTDIR}/Estructuras
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/grafo.o Estructuras/grafo.cpp
-
-${OBJECTDIR}/Estructuras/nodoGrafo.o: Estructuras/nodoGrafo.cpp 
-	${MKDIR} -p ${OBJECTDIR}/Estructuras
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructuras/nodoGrafo.o Estructuras/nodoGrafo.cpp
 
 ${OBJECTDIR}/Individuo.o: Individuo.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -176,10 +160,20 @@ ${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o: TinyXmlLib/tinyxmlparser.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o TinyXmlLib/tinyxmlparser.cpp
 
+${OBJECTDIR}/jsonReader.o: jsonReader.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/jsonReader.o jsonReader.cpp
+
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/reproduccion.o: reproduccion.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/reproduccion.o reproduccion.cpp
 
 # Subprojects
 .build-subprojects:

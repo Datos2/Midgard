@@ -1,9 +1,9 @@
-#include "read.h"
+#include "jsonReader.h"
 
-read::read() {
+jsonReader::jsonReader() {
 }
 
-int read::reader() {
+int jsonReader::reader() {
     Jzon::Object rootNode;
         Jzon::FileReader::ReadFile("Datos/file.json", rootNode);
 
@@ -44,4 +44,3 @@ int read::reader() {
         
         return 0;
 }
-

@@ -1,10 +1,10 @@
-#include "write.h"
+#include "jsonWriter.h"
 
-write::write() {        
+jsonWriter::jsonWriter() {
 }
 
 
-int write::writer() {
+int jsonWriter::writer(){
     Jzon::Object root;
         root.Add("names", "value");
         root.Add("number", 20);

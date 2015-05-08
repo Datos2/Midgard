@@ -1,10 +1,3 @@
-/* 
- * File:   Arbol_Genealogico.h
- * Author: briam
- *
- * Created on April 28, 2015, 12:32 AM
- */
-
 #ifndef ARBOL_GENEALOGICO_H
 #define	ARBOL_GENEALOGICO_H
 
@@ -12,16 +5,15 @@
 #include <cstdio>
 #include "Nodo_Arbol.h"
 #include "ListaSimple.h"
-#include "../Individuo.h"
-//#include "Individuo.h"
+#include  "../Individuo.h"
 
 using namespace std;
 
 class Arbol_Genealogico {//clase lista
 private:
     int num_Pobl;//num de pobladores actuales
-    ListaSimple<Nodo_Arbol*> poblacionActual;
-    ListaSimple<Nodo_Arbol> poblacionTotal;
+    ListaSimple<Nodo_Arbol*>* poblacionActual;
+    ListaSimple<Nodo_Arbol>* poblacionTotal;
     
 public://se definen los metodos publicos
 
@@ -41,4 +33,3 @@ public://se definen los metodos publicos
 
 
 #endif	/* ARBOL_GENEALOGICO_H */
-

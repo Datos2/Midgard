@@ -1,15 +1,9 @@
-/* 
- * File:   Nodo.h
- * Author: briam
- *
- * Created on April 28, 2015, 12:32 AM
- */
-
 #ifndef NODO_ARBOL_H
 #define	NODO_ARBOL_H
 
-
 #include "../Individuo.h"
+//#include "Individuo.h"
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -33,12 +27,7 @@ public:
     Individuo* getThis();
     int getId();
 
- 
-
-
-
 };
 
 
 #endif	/* NODO_ARBOL_H */
-
