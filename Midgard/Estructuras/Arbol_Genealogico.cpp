@@ -73,3 +73,7 @@ void Arbol_Genealogico::poblacionInicial(int numPoblacion,int HP,int spd,int def
     }
     
 }
+
+void Arbol_Genealogico::Reproduccion(){
+    
+}

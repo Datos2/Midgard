@@ -28,6 +28,7 @@ public://se definen los metodos publicos
     void matarIndividuo(int);
     Nodo_Arbol* buscarNodo(int);
     Individuo* buscarIndividuo(int);
+    void Reproduccion();
     
 };
 

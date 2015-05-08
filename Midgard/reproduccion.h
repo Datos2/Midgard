@@ -12,6 +12,7 @@ namespace reproduccion{
     int mutacion();
     int maxFitness(ListaSimple<Nodo_Arbol*>*);
     int fitnessInd(Individuo*);
+    
 };
 
 #endif	/* REPRODUCCION_H */
