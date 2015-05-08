@@ -43,7 +43,6 @@
       <itemPath>Individuo.cpp</itemPath>
       <itemPath>Mundo.cpp</itemPath>
       <itemPath>Pueblo.cpp</itemPath>
-      <itemPath>jsonReader.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>reproduccion.cpp</itemPath>
     </logicalFolder>
@@ -144,8 +143,6 @@
       </item>
       <item path="TinyXmlLib/tinyxmlparser.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="jsonReader.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="reproduccion.cpp" ex="false" tool="1" flavor2="0">
@@ -236,8 +233,6 @@
       <item path="TinyXmlLib/tinyxmlerror.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TinyXmlLib/tinyxmlparser.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="jsonReader.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

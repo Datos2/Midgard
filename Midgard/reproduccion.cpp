@@ -63,3 +63,29 @@ int reproduccion::seekFirstBit(int num){
     }
     return (index+1);
 }
+
+int reproduccion::fitnessInd(Individuo* pIndividuo){
+    int* vector = pIndividuo->getBitVector()->getBits();
+    int fit = 0;
+    for(int f = 0; f < 8; f++){
+        fit += vector[f];
+    }
+    return (fit/8);
+}
+
+int reproduccion::maxFitness(ListaSimple<Nodo_Arbol*>* poblacionT){
+    int maxFit=0;
+    ListaSimple<Individuo *> poblacion;
+    int largo = poblacion.largoLista();
+    for(int i = 0; i < largo; i++){
+        poblacion.insertar(poblacionT->getElemento(i)->getThis());
+    }
+    
+    for(int j = 0; j < poblacion.largoLista(); j++){
+        int fitnessTemp=fitnessInd(poblacion.getElemento(j));
+        if(fitnessTemp>maxFit){
+        maxFit = fitnessTemp;
+        }
+    }return maxFit;
+}
+

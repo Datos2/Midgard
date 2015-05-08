@@ -51,7 +51,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/TinyXmlLib/tinyxml.o \
 	${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o \
 	${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o \
-	${OBJECTDIR}/jsonReader.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/reproduccion.o
 
@@ -159,11 +158,6 @@ ${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o: TinyXmlLib/tinyxmlparser.cpp
 	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o TinyXmlLib/tinyxmlparser.cpp
-
-${OBJECTDIR}/jsonReader.o: jsonReader.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/jsonReader.o jsonReader.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

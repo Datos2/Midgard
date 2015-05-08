@@ -2,8 +2,6 @@
 #define	NODO_ARBOL_H
 
 #include "../Individuo.h"
-//#include "Individuo.h"
-
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -27,7 +25,8 @@ public:
     Individuo* getThis();
     int getId();
 
-};
+ 
 
+};
 
 #endif	/* NODO_ARBOL_H */

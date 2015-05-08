@@ -9,8 +9,9 @@ using namespace std;
 class BitVector{
    //int* vector;
    int _size;
+   int* vector;
 public:
-    int* vector;
+    
     BitVector(int);
     BitVector();
     

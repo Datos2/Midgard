@@ -5,7 +5,7 @@
 #include <cstdio>
 #include "Nodo_Arbol.h"
 #include "ListaSimple.h"
-#include  "../Individuo.h"
+#include "../Individuo.h"
 
 using namespace std;
 
@@ -20,6 +20,7 @@ public://se definen los metodos publicos
     Arbol_Genealogico();
 
     ~Arbol_Genealogico();
+    void poblacionInicial(int,int,int,int,int,int,int,int,int);
     void nuevoIndividuo(Individuo);
     void nuevoIndividuo(int,int,Individuo);
     void matarIndividuosViejos();
@@ -29,7 +30,5 @@ public://se definen los metodos publicos
     Individuo* buscarIndividuo(int);
     
 };
-
-
 
 #endif	/* ARBOL_GENEALOGICO_H */
