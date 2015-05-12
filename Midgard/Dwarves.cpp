@@ -15,10 +15,10 @@ Dwarves::~Dwarves() {
     
 }
 
-bool Dwarves::EdadMuerte(Individuo individuo){
-    return individuo.getEdad()==80; 
+bool Dwarves::EdadMuerte(int edad){
+    return edad==80; 
 }
 
-bool Dwarves::EdadParaPelea(Individuo individuo){
-    return individuo.getEdad()==25;
+bool Dwarves::EdadParaPelea(int edadpelea){
+    return edadpelea==25;
 }

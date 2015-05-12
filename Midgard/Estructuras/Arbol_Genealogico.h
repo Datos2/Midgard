@@ -4,7 +4,7 @@
  *
  * Created on April 28, 2015, 12:32 AM
  */
-
+ 
 #ifndef ARBOL_GENEALOGICO_H
 #define	ARBOL_GENEALOGICO_H
 
@@ -13,7 +13,7 @@
 #include "Nodo_Arbol.h"
 #include "ListaSimple.h"
 #include "../Individuo.h"
-
+#include "../Dwarves.h"
 using namespace std;
 
 class Arbol_Genealogico {//clase lista

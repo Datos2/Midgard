@@ -10,8 +10,8 @@ public:
     Giants();
     Giants(string,int,int,int,int,int,int,int,int,int,int);
     ~Giants();
-    bool EdadMuerte(Individuo);
-    bool EdadParaPelea(Individuo);
+    bool EdadMuerte(int);
+    bool EdadParaPelea(int);
 private:
 
 };

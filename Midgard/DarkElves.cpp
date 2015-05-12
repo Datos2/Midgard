@@ -26,10 +26,10 @@ DarkElves::DarkElves(string ptipo,int pvida_max,int pataque_max,int pdefensa_max
 DarkElves::~DarkElves() {
 }
 
-bool DarkElves::EdadMuerte(Individuo individuo){
-    return individuo.getEdad()==80; 
+bool DarkElves::EdadMuerte(int edad){
+    return edad==80; 
 }
 
-bool DarkElves::EdadParaPelea(Individuo individuo){
-    return individuo.getEdad()==25;
+bool DarkElves::EdadParaPelea(int edadpelea){
+    return edadpelea==25;
 }

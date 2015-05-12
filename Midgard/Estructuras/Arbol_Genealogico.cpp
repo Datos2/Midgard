@@ -33,7 +33,7 @@ void Arbol_Genealogico::matarIndividuosViejos(){
     int largoPoblacion_total=0;
     while(largoPoblacion_total<num_Pobl){
         if(tipoPoblacion()==1){
-            if(Dwarves::EdadMuerte(this->poblacionTotal->getElemento(largoPoblacion_total).getThis()->getEdad())==true);
+            if(Dwarves::EdadMuerte(this->poblacionTotal->getElemento(largoPoblacion_total).getThis()->getEdad()));
                //mata al individuo. 
         }
         else if(tipoPoblacion()==2){

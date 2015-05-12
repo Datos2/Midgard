@@ -10,8 +10,8 @@ public:
     DarkElves(string);
     DarkElves(string,int,int,int,int,int,int,int,int,int,int);
     ~DarkElves();
-    bool EdadMuerte(Individuo);
-    bool EdadParaPelea(Individuo);
+    bool EdadMuerte(int);
+    bool EdadParaPelea(int);
 private:
 
 };

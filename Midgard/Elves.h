@@ -9,8 +9,8 @@ public:
     Elves();   
     Elves(string,int,int,int,int,int,int,int,int,int,int);
     virtual ~Elves();
-    bool EdadMuerte(Individuo);
-    bool EdadParaPelea(Individuo);
+    bool EdadMuerte(int);
+    bool EdadParaPelea(int);
 
 };
 

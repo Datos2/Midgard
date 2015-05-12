@@ -16,10 +16,10 @@ Giants::~Giants() {
     delete this;
 }
 
-bool Giants::EdadMuerte(Individuo individuo){
-    return individuo.getEdad()==75; 
+bool Giants::EdadMuerte(int edad){
+    return edad==75; 
 }
 
-bool Giants::EdadParaPelea(Individuo individuo){
-    return individuo.getEdad()==15;
+bool Giants::EdadParaPelea(int edadpelea){
+    return edadpelea==15;
 }

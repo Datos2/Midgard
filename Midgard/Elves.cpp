@@ -17,10 +17,10 @@ Elves::Elves(string ptipo,int pvida_max,int pataque_max,int pdefensa_max,
     penergiavital_max,pblot_max,prunes_max,psupersticion_max){}
 
 
-bool Elves::EdadMuerte(Individuo individuo){
-    return individuo.getEdad()==100;
+bool Elves::EdadMuerte(int edad){
+    return edad==100;
 }
 
-bool Elves::EdadParaPelea(Individuo individuo){
-    return individuo.getEdad()==17;
+bool Elves::EdadParaPelea(int edadpelea){
+    return edadpelea==17;
 }

@@ -18,8 +18,8 @@ public:
     string GetTipo();
     void SetLista_criaturas(ListaSimple<Individuo>* lista_criaturas);
     ListaSimple<Individuo>* GetLista_criaturas();
-    static virtual bool EdadMuerte(Individuo);
-    static virtual bool EdadParaPelea(Individuo);
+    virtual bool EdadMuerte(int);
+    virtual bool EdadParaPelea(int);
     void SetArbol_genealogico_pueblo(Arbol_Genealogico arbol_genealogico_pueblo);
     Arbol_Genealogico GetArbol_genealogico_pueblo();
     void SetEdda_actual(string edda_actual);
