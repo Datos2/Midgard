@@ -5,18 +5,21 @@
 #include "Estructuras/ListaSimple.h"
 #include "Pueblo.h"
 #include "Edda.h"
+#include "DarkElves.h"
+#include "Dwarves.h"
+#include "Elves.h"
+#include "Giants.h"
 
 class Mundo {
 public:
     Mundo();
+    Mundo(string);
     ~Mundo();
-    void SetPoblaciones(ListaSimple<Pueblo> poblaciones);
-    ListaSimple<Pueblo> GetPoblaciones();
-    void SetEdda_actual(Edda edda_actual);
-    Edda GetEdda_actual();
+    void SetPoblaciones(ListaSimple<Pueblo>* poblaciones);
+    ListaSimple<Pueblo> *GetPoblaciones();
+    ListaSimple<Pueblo>*generarPoblacionInicial();
 private:
-    Edda edda_actual;
-    ListaSimple<Pueblo> poblaciones;
+    ListaSimple<Pueblo>* poblaciones;
 };
 
 #endif	/* MUNDO_H */

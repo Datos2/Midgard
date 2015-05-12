@@ -19,14 +19,15 @@ using namespace std;
 class Arbol_Genealogico {//clase lista
 private:
     int num_Pobl;//num de pobladores actuales
-    ListaSimple<Nodo_Arbol*> poblacionActual;
-    ListaSimple<Nodo_Arbol> poblacionTotal;
-    
+    ListaSimple<Nodo_Arbol*>* poblacionActual;
+    ListaSimple<Nodo_Arbol>* poblacionTotal;
+    string tipo_poblacion;
 public://se definen los metodos publicos
 
     Arbol_Genealogico();
 
     ~Arbol_Genealogico();
+    void poblacionInicial(int,int,int,int,int,int,int,int,int);
     void nuevoIndividuo(Individuo);
     void nuevoIndividuo(int,int,Individuo);
     void matarIndividuosViejos();
@@ -34,6 +35,9 @@ public://se definen los metodos publicos
     void matarIndividuo(int);
     Nodo_Arbol* buscarNodo(int);
     Individuo* buscarIndividuo(int);
+    void setTipo_poblacion(string tipo_poblacion);
+    string getTipo_poblacion();
+    int tipoPoblacion();
     
 };
 

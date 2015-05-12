@@ -1,145 +1,100 @@
 #include "Individuo.h"
-#include<iostream>
-using namespace std;
-
+#include "Individuo.h"
 int Individuo::idCriat=1;
-Individuo::Individuo(){  
+Individuo::Individuo() {
+}
+
+Individuo::Individuo(string ptipo){ 
+    id=idCriat;
+    tipo=ptipo;
+    edad=1;
+    experiencia=0;
+
+    idCriat++;
+    BitVector* Bit=new BitVector(32*8);
+    
+    for(int i=0;i<8;i++){
+    Bit->setNum(0,i);
+    }
+    _stats=Bit;
     
 }
-Individuo::~Individuo() {
-}
 
-Individuo::Individuo(string ptipo){
-    cout<<ptipo<<endl;
-    cout<<idCriat<<endl;
+Individuo::Individuo(string ptipo,BitVector* vector){
+    
     this->id=idCriat;
     this->tipo=ptipo;
-    cout<<tipo<<endl;
-    cout<<id<<endl;
+    edad=1;
+    experiencia=0;
+    
     idCriat++;
+    _stats=vector;
 }
 
-void Individuo::SetTipo(string tipo) {
-    this->tipo = tipo;
+BitVector* Individuo::getBitVector(){
+    return _stats;
 }
-
-string Individuo::GetTipo()  {
+int Individuo::getId(){
+    return id;
+}
+string Individuo::getTipo(){
     return tipo;
 }
 
-void Individuo::SetGenero(bool genero) {
-    this->genero = genero;
+void Individuo::setHP(int pstat){
+    _stats->setNum(pstat,0);
+    
+}
+void Individuo::setSpeed(int pstat){
+    _stats->setNum(pstat,1);
+}
+void Individuo::setDef(int pstat){
+    _stats->setNum(pstat,2);
+}
+void Individuo::setInt(int pstat){
+    _stats->setNum(pstat,3);
+}
+void Individuo::setMP(int pstat){
+    _stats->setNum(pstat,4);
+}
+void Individuo::setVit(int pstat){
+    _stats->setNum(pstat,5);
+}
+void Individuo::setBlot(int pstat){
+    _stats->setNum(pstat,6);
+}
+void Individuo::setRunes(int pstat){
+    _stats->setNum(pstat,7);
+}
+int Individuo::getHP(){
+    return _stats->getValue(0);
+}
+int Individuo::getSpeed(){
+    return _stats->getValue(1);
+}
+int Individuo::getDef(){
+    return _stats->getValue(2);
+}
+int Individuo::getInt(){
+    return _stats->getValue(3);
+}
+int Individuo::getMP(){
+    return _stats->getValue(4);
+}
+int Individuo::getVit(){
+    return _stats->getValue(5);
+}
+int Individuo::getBlot(){
+    return _stats->getValue(6);
+}
+int Individuo::getRunes(){
+    return _stats->getValue(7);
 }
 
-bool Individuo::IsGenero()  {
-    return genero;
-}
-
-void Individuo::SetId(int id) {
-    this->id = id;
-}
-
-int Individuo::GetId()  {
-    return id;
-}
-
-void Individuo::SetSupersticion(int supersticion) {
-    this->supersticion = supersticion;
-}
-
-int Individuo::GetSupersticion()  {
-    return supersticion;
-}
-
-void Individuo::SetRunes(int runes) {
-    this->runes = runes;
-}
-
-int Individuo::GetRunes()  {
-    return runes;
-}
-
-void Individuo::SetBlot(int blot) {
-    this->blot = blot;
-}
-
-int Individuo::GetBlot()  {
-    return blot;
-}
-
-void Individuo::SetEnergia_vital(int energia_vital) {
-    this->energia_vital = energia_vital;
-}
-
-int Individuo::GetEnergia_vital()  {
-    return energia_vital;
-}
-
-void Individuo::SetMagia(int magia) {
-    this->magia = magia;
-}
-
-int Individuo::GetMagia()  {
-    return magia;
-}
-
-void Individuo::SetInteligencia(int inteligencia) {
-    this->inteligencia = inteligencia;
-}
-
-int Individuo::GetInteligencia()  {
-    return inteligencia;
-}
-
-void Individuo::SetDefensa(int defensa) {
-    this->defensa = defensa;
-}
-
-int Individuo::GetDefensa()  {
-    return defensa;
-}
-
-void Individuo::SetVelocidad(int velocidad) {
-    this->velocidad = velocidad;
-}
-
-int Individuo::GetVelocidad()  {
-    return velocidad;
-}
-
-void Individuo::SetExperiencia(int experiencia) {
-    this->experiencia = experiencia;
-}
-
-int Individuo::GetExperiencia()  {
-    return experiencia;
-}
-
-void Individuo::SetVida(int vida) {
-    this->vida = vida;
-}
-
-int Individuo::GetVida()  {
-    return vida;
-}
-
-void Individuo::SetEdad(int edad) {
+void Individuo::setEdad(int edad) {
     this->edad = edad;
 }
 
-int Individuo::GetEdad()  {
+int Individuo::getEdad(){
     return edad;
 }
-
-void Individuo::SetIdCriat(int idCriat) {
-    Individuo::idCriat = idCriat;
-}
-
-int Individuo::GetIdCriat() {
-    return idCriat;
-}
-
-
-bool Individuo::EdadMuerte(){}
-
-bool Individuo::EdadParaPelea(){}

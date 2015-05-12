@@ -8,10 +8,12 @@
 #include "Supremacia.h"
 
 Supremacia::Supremacia() {
+    duracion=800;
 }
 
 
 
 Supremacia::~Supremacia() {
+  
 }
 

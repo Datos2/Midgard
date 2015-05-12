@@ -7,45 +7,64 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Mundo.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Datos/Xml.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/DarkElves.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Supremacia.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/LogicGameController.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/reproduccion.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Barbara.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Individuo.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/FeSupersticion.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/UnionPueblos.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/UnionPueblos.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Dwarves.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Arbol_Genealogico.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Datos/LDMM.xml</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Supremacia.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Elves.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Batalla.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/DarkElves.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Datos/Armas.xml</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Armas.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/main.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/BitVector.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Edda.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/CienciaTecnologia.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Giants.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Mundo.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Datos/Xml.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Elves.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Batalla.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/ListaSimple.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Calculadora.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Individuo.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Calculadora.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/tinyxml.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Edda.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/tinyxml.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Pueblo.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/ViewGameController.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/CienciaTecnologia.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/LogicGameController.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Arbol_Genealogico.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Dwarves.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Giants.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/GameController.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Nodo.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Mundo.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Supremacia.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Individuo.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Dwarves.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Elves.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Datos/Armas.xml</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/main.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/reproduccion.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/nodoGrafo.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/CienciaTecnologia.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/linkedList.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Mundo.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Elves.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Batalla.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Calculadora.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Individuo.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/ViewGameController.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/nodoGrafo.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Calculadora.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/linkedNode.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/BitVector.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Pueblo.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Nodo_Arbol.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Barbara.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Armas.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Pueblo.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Dwarves.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Nodo_Arbol.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/FeSupersticion.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Giants.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/GameController.cpp</file>
         </group>
     </open-files>
 </project-private>

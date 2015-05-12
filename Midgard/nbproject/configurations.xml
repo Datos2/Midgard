@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f3" displayName="Controller" projectFiles="true">
+      <itemPath>TinyXmlLib/GameController.cpp</itemPath>
+      <itemPath>TinyXmlLib/GameController.h</itemPath>
+    </logicalFolder>
     <logicalFolder name="f1" displayName="Datos" projectFiles="true">
       <itemPath>Datos/Armas.xml</itemPath>
       <itemPath>Datos/Jzon.cpp</itemPath>
@@ -43,6 +47,11 @@
       <itemPath>Pueblo.h</itemPath>
       <itemPath>Supremacia.h</itemPath>
       <itemPath>UnionPueblos.h</itemPath>
+      <itemPath>reproduccion.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f4" displayName="LogicController" projectFiles="true">
+      <itemPath>TinyXmlLib/LogicGameController.cpp</itemPath>
+      <itemPath>TinyXmlLib/LogicGameController.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -63,12 +72,13 @@
       <itemPath>FeSupersticion.cpp</itemPath>
       <itemPath>Giants.cpp</itemPath>
       <itemPath>Individuo.cpp</itemPath>
-      <itemPath>Datos/LDMM.xml</itemPath>
+      <itemPath>LDMM.xml</itemPath>
       <itemPath>Mundo.cpp</itemPath>
       <itemPath>Pueblo.cpp</itemPath>
       <itemPath>Supremacia.cpp</itemPath>
       <itemPath>UnionPueblos.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>reproduccion.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TinyXmlLib" displayName="TinyXmlLib" projectFiles="true">
       <itemPath>TinyXmlLib/tinystr.cpp</itemPath>
@@ -77,6 +87,10 @@
       <itemPath>TinyXmlLib/tinyxml.h</itemPath>
       <itemPath>TinyXmlLib/tinyxmlerror.cpp</itemPath>
       <itemPath>TinyXmlLib/tinyxmlparser.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f5" displayName="ViewController" projectFiles="true">
+      <itemPath>TinyXmlLib/ViewGameController.cpp</itemPath>
+      <itemPath>TinyXmlLib/ViewGameController.h</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -144,8 +158,6 @@
       </item>
       <item path="Datos/Jzon.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Datos/LDMM.xml" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Datos/Xml.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Datos/Xml.h" ex="false" tool="3" flavor2="0">
@@ -202,6 +214,8 @@
       </item>
       <item path="Individuo.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="LDMM.xml" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Mundo.h" ex="false" tool="3" flavor2="0">
@@ -213,6 +227,18 @@
       <item path="Supremacia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Supremacia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/GameController.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/GameController.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/LogicGameController.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/LogicGameController.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/ViewGameController.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/ViewGameController.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TinyXmlLib/tinystr.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -231,6 +257,10 @@
       <item path="UnionPueblos.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="reproduccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="reproduccion.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -283,8 +313,6 @@
       </item>
       <item path="Datos/Jzon.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Datos/LDMM.xml" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Datos/Xml.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Datos/Xml.h" ex="false" tool="3" flavor2="0">
@@ -341,6 +369,8 @@
       </item>
       <item path="Individuo.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="LDMM.xml" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Mundo.h" ex="false" tool="3" flavor2="0">
@@ -352,6 +382,18 @@
       <item path="Supremacia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Supremacia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/GameController.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/GameController.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/LogicGameController.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/LogicGameController.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/ViewGameController.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/ViewGameController.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TinyXmlLib/tinystr.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -370,6 +412,10 @@
       <item path="UnionPueblos.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="reproduccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="reproduccion.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

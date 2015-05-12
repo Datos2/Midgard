@@ -8,10 +8,10 @@
 #include "CienciaTecnologia.h"
 
 CienciaTecnologia::CienciaTecnologia() {
+    duracion=1200;
 }
 
-
-
 CienciaTecnologia::~CienciaTecnologia() {
+  
 }
 

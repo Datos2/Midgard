@@ -10,16 +10,18 @@ class Edda {
 public:
     Edda();
     virtual ~Edda();
-    virtual void SetDuracion(int duracion);
-    virtual int GetDuracion();
-    virtual void setArmas();
-    void SetArmas_edda(ListaSimple<Armas> armas_edda);
-    ListaSimple<Armas> GetArmas_edda();//carga las armas del xml.
+    void SetDuracion(int duracion);
+    int GetDuracion();
+    void setArmas();
+    void SetArmas_edda(ListaSimple<Armas> *armas_edda);
+    ListaSimple<Armas>* GetArmas_edda();
+    void SetEdda_actual(string edda_actual);
+    string GetEdda_actual();//carga las armas del xml.
     
-private: 
+protected: 
     int duracion;
-    ListaSimple<Armas> armas_edda;//se cargan del xml.
-    
+    ListaSimple<Armas>* armas_edda;//se cargan del xml.
+ 
 };
 
 #endif	/* EDDA_H */

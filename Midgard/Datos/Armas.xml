@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <armas>
 <arma1>Garrote</arma1>
-<arma2>Arco y flecha</arma2>
+<arma2>Arcoyflecha</arma2>
 <arma3>Lanza</arma3>
 <arma4>Espada</arma4>
 <arma5>Hacha</arma5>
@@ -10,5 +10,5 @@
 <arma8>Rifle</arma8>
 <arma9>Pistola</arma9>
 <arma10>Granada</arma10>
-<arma11>Espada Laser</arma11>
+<arma11>EspadaLaser</arma11>
 </armas>

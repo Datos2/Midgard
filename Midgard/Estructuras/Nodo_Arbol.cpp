@@ -6,9 +6,9 @@ Nodo_Arbol::Nodo_Arbol(Individuo pcriatura){ //constructor vacio.
     padre2=NULL;
     This=pcriatura;
     cout<<"este es el id de la creatura ingresada-> ";
-    cout<<This.GetId()<<endl;
+    cout<<This.getId()<<endl;
     cout<<"este es el tipo de la creatura ingresada-> ";
-    cout<<This.GetTipo()<<endl;
+    cout<<This.getTipo()<<endl;
 }
 Nodo_Arbol::Nodo_Arbol(Nodo_Arbol * a,Nodo_Arbol * b,Individuo pcriatura){
     
@@ -16,9 +16,9 @@ Nodo_Arbol::Nodo_Arbol(Nodo_Arbol * a,Nodo_Arbol * b,Individuo pcriatura){
     padre2=b;
     This=pcriatura;
     cout<<"este es el id de la creatura ingresada-> ";
-    cout<<This.GetId()<<endl;
+    cout<<This.getId()<<endl;
     cout<<"este es el tipo de la creatura ingresada-> ";
-    cout<<This.GetTipo()<<endl;
+    cout<<This.getTipo()<<endl;
     }
 Nodo_Arbol::Nodo_Arbol(){
     padre1=NULL;
@@ -35,7 +35,7 @@ Nodo_Arbol * Nodo_Arbol::getPadre1(){//retorna dato.
     return &This;
 }
     int Nodo_Arbol::getId(){
-        return This.GetId();
+        return This.getId();
     }
 /*  
 Nodo_Arbol::~Nodo_Arbol(){

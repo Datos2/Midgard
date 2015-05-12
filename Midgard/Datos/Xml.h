@@ -17,7 +17,7 @@ class Xml {
 private:
 	const char* arch;//nombre del archivo xml
 	TiXmlDocument file;//documento de tinyxml.
-public:
+public: 
 	Xml(void);//constructor vacio.
 	Xml(const char*);//constructor con nombre de xml como parametro.
 	bool cargar_archivo();//carga el archivo xml.

@@ -2,14 +2,15 @@
 #ifndef ELVES_H
 #define	ELVES_H
 #include "Individuo.h"
+#include "Pueblo.h"
 
-class Elves: public Individuo{
+class Elves: public Pueblo{
 public:
     Elves();   
-    ~Elves();
-    bool EdadMuerte();
-    bool EdadParaPelea();
-private:
+    Elves(string,int,int,int,int,int,int,int,int,int,int);
+    virtual ~Elves();
+    bool EdadMuerte(Individuo);
+    bool EdadParaPelea(Individuo);
 
 };
 

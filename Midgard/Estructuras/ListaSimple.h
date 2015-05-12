@@ -12,7 +12,7 @@ using namespace std;
 
 template<class T>//se define una clase template.
 //template<class E, template<typename> class T >
-class ListaSimple {//clase lista
+class ListaSimple{//clase lista
 private:
     Nodo<T> *head;//nodos head y tail como atributos privados.
     int num_nodos;//se inicializa el contador de nodos.
@@ -25,7 +25,7 @@ public://se definen los metodos publicos
 }
 
     ~ListaSimple() {//destructor de la clase.
-    delete this; //elimina el objeto.
+        this->clearList(); //elimina el objeto.
 }
 
     void insertar(T* valor){//metodo insertar un elemento al inicio.
@@ -141,6 +141,15 @@ void change_pos_value(int id,int new_value){
     Nodo<T> *nodo=getNodo(id);
     nodo->setValue(new_value);
 }
+
+void clearList(){//destruye la lista.
+    /*Nodo<T> *tmp = head;      
+    while (tmp != NULL) {    
+        head = head->getNext();
+        delete tmp;
+        tmp = head;
+    }
+    head = head = NULL;*/}
 };
 
 #endif	/* LISTASIMPLE_H */

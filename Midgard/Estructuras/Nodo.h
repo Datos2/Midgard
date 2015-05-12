@@ -29,6 +29,13 @@ public:
     dato=valor;
     siguiente=next;
 }
+    ~Nodo(){
+   /* T* ptr=new T;
+    ptr=&dato;
+    delete ptr;
+    delete siguiente;*/
+    
+    }
     // Getters y setters
     T getValue(){//retorna dato.
     return dato;
@@ -41,9 +48,6 @@ public:
     }
     void setNext(Nodo<T> *nodo){//setea puntero siguiente.
     siguiente=nodo;
-}
-    ~Nodo(){
-    delete this;
 }
 
 

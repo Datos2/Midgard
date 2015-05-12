@@ -3,13 +3,8 @@
 #include "Barbara.h"
 
 
-Barbara::Barbara() {
-}
+Barbara::Barbara(){duracion=1000;}
 
 
-Barbara::~Barbara() {
-}
+Barbara::~Barbara() {}
 
-void Barbara::setArmas(){
-   Xml xml("LDMM");
-}

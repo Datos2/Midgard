@@ -10,9 +10,9 @@ public:
     Armas();
     virtual ~Armas();
     void SetTotal_armas();
-    ListaSimple<const char*> GetTotal_armas();
+    ListaSimple<const char*>* GetTotal_armas();
 private:
-    ListaSimple<const char*> total_armas;
+    ListaSimple<const char*>* total_armas;
 };
 
 #endif	/* ARMAS_H */

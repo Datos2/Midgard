@@ -57,12 +57,16 @@ OBJECTFILES= \
 	${OBJECTDIR}/Mundo.o \
 	${OBJECTDIR}/Pueblo.o \
 	${OBJECTDIR}/Supremacia.o \
+	${OBJECTDIR}/TinyXmlLib/GameController.o \
+	${OBJECTDIR}/TinyXmlLib/LogicGameController.o \
+	${OBJECTDIR}/TinyXmlLib/ViewGameController.o \
 	${OBJECTDIR}/TinyXmlLib/tinystr.o \
 	${OBJECTDIR}/TinyXmlLib/tinyxml.o \
 	${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o \
 	${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o \
 	${OBJECTDIR}/UnionPueblos.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/reproduccion.o
 
 
 # C Compiler Flags
@@ -199,6 +203,21 @@ ${OBJECTDIR}/Supremacia.o: Supremacia.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Supremacia.o Supremacia.cpp
 
+${OBJECTDIR}/TinyXmlLib/GameController.o: TinyXmlLib/GameController.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/GameController.o TinyXmlLib/GameController.cpp
+
+${OBJECTDIR}/TinyXmlLib/LogicGameController.o: TinyXmlLib/LogicGameController.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/LogicGameController.o TinyXmlLib/LogicGameController.cpp
+
+${OBJECTDIR}/TinyXmlLib/ViewGameController.o: TinyXmlLib/ViewGameController.cpp 
+	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TinyXmlLib/ViewGameController.o TinyXmlLib/ViewGameController.cpp
+
 ${OBJECTDIR}/TinyXmlLib/tinystr.o: TinyXmlLib/tinystr.cpp 
 	${MKDIR} -p ${OBJECTDIR}/TinyXmlLib
 	${RM} "$@.d"
@@ -228,6 +247,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/reproduccion.o: reproduccion.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/reproduccion.o reproduccion.cpp
 
 # Subprojects
 .build-subprojects:
