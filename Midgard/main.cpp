@@ -19,7 +19,7 @@ int main() {
     
     Mundo mundo;
     ListaSimple<Pueblo>*list=new ListaSimple<Pueblo>();
-   
+    
     list=mundo.generarPoblacionInicial();
     
     //cout<<list->getHead()->getValue().GetTipo()<<endl;

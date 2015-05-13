@@ -32,7 +32,6 @@
       <itemPath>Armas.h</itemPath>
       <itemPath>Barbara.h</itemPath>
       <itemPath>Batalla.h</itemPath>
-      <itemPath>Calculadora.h</itemPath>
       <itemPath>CienciaTecnologia.h</itemPath>
       <itemPath>DarkElves.h</itemPath>
       <itemPath>Dwarves.h</itemPath>
@@ -57,7 +56,6 @@
       <itemPath>Armas.cpp</itemPath>
       <itemPath>Barbara.cpp</itemPath>
       <itemPath>Batalla.cpp</itemPath>
-      <itemPath>Calculadora.cpp</itemPath>
       <itemPath>CienciaTecnologia.cpp</itemPath>
       <itemPath>DarkElves.cpp</itemPath>
       <itemPath>Dwarves.cpp</itemPath>
@@ -129,10 +127,6 @@
       <item path="Batalla.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Batalla.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Calculadora.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Calculadora.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="CienciaTecnologia.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -272,10 +266,6 @@
       <item path="Batalla.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Batalla.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Calculadora.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Calculadora.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="CienciaTecnologia.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -38,7 +38,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/Armas.o \
 	${OBJECTDIR}/Barbara.o \
 	${OBJECTDIR}/Batalla.o \
-	${OBJECTDIR}/Calculadora.o \
 	${OBJECTDIR}/CienciaTecnologia.o \
 	${OBJECTDIR}/DarkElves.o \
 	${OBJECTDIR}/Datos/Jzon.o \
@@ -104,11 +103,6 @@ ${OBJECTDIR}/Batalla.o: Batalla.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Batalla.o Batalla.cpp
-
-${OBJECTDIR}/Calculadora.o: Calculadora.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Calculadora.o Calculadora.cpp
 
 ${OBJECTDIR}/CienciaTecnologia.o: CienciaTecnologia.cpp 
 	${MKDIR} -p ${OBJECTDIR}
