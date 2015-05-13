@@ -35,12 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Arbol_Genealogico.o \
-	${OBJECTDIR}/BitVector.o \
-	${OBJECTDIR}/Individuo.o \
-	${OBJECTDIR}/Nodo_Arbol.o \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/reproduccion.o
+	${OBJECTDIR}/main.o
 
 
 # C Compiler Flags
@@ -67,35 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/midgard ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Arbol_Genealogico.o: Arbol_Genealogico.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arbol_Genealogico.o Arbol_Genealogico.cpp
-
-${OBJECTDIR}/BitVector.o: BitVector.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BitVector.o BitVector.cpp
-
-${OBJECTDIR}/Individuo.o: Individuo.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Individuo.o Individuo.cpp
-
-${OBJECTDIR}/Nodo_Arbol.o: Nodo_Arbol.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Nodo_Arbol.o Nodo_Arbol.cpp
-
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
-
-${OBJECTDIR}/reproduccion.o: reproduccion.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/reproduccion.o reproduccion.cpp
 
 # Subprojects
 .build-subprojects:
