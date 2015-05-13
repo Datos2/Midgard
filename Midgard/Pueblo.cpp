@@ -28,7 +28,7 @@ Pueblo::Pueblo(string ptipo,int pvida_max,int pataque_max,int pdefensa_max,
 }
 Pueblo::~Pueblo(){
     delete lista_criaturas;
-    tipo.erase(0,tipo.npos);
+  //  tipo.erase(0,tipo.npos);
 }
 
 void Pueblo::SetTipo(string tipo) {
@@ -46,8 +46,8 @@ void Pueblo::SetLista_criaturas(ListaSimple<Individuo>* lista_criaturas) {
 ListaSimple<Individuo>* Pueblo::GetLista_criaturas(){
     return lista_criaturas;
 }
-bool Pueblo::EdadMuerte(Individuo){}
-bool Pueblo::EdadParaPelea(Individuo){}
+bool Pueblo::EdadMuerte(int){}
+bool Pueblo::EdadParaPelea(int){}
 
 void Pueblo::SetArbol_genealogico_pueblo(Arbol_Genealogico arbol_genealogico_pueblo) {
     this->arbol_genealogico_pueblo = arbol_genealogico_pueblo;

@@ -9,7 +9,6 @@
         <group>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Datos/Xml.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/DarkElves.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/LogicGameController.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/reproduccion.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Barbara.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/FeSupersticion.h</file>
@@ -28,13 +27,10 @@
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/ListaSimple.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/tinyxml.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Edda.h</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/ViewGameController.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/CienciaTecnologia.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/LogicGameController.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Arbol_Genealogico.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Dwarves.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Giants.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/GameController.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Nodo.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Mundo.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Supremacia.h</file>
@@ -52,7 +48,6 @@
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Batalla.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Calculadora.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Individuo.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/ViewGameController.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/nodoGrafo.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Calculadora.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/linkedNode.h</file>
@@ -64,7 +59,6 @@
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Pueblo.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Nodo_Arbol.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/FeSupersticion.cpp</file>
-            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/GameController.cpp</file>
         </group>
     </open-files>
 </project-private>

@@ -4,7 +4,7 @@
 #define	DWARVES_H
 #include "Individuo.h"
 #include "Pueblo.h"
-
+ 
 class Dwarves: public Pueblo {
 public:
     Dwarves();

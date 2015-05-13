@@ -13,7 +13,7 @@
 #include "Nodo_Arbol.h"
 #include "ListaSimple.h"
 #include "../Individuo.h"
-#include "../Dwarves.h"
+
 using namespace std;
 
 class Arbol_Genealogico {//clase lista
@@ -30,7 +30,7 @@ public://se definen los metodos publicos
     void poblacionInicial(int,int,int,int,int,int,int,int,int);
     void nuevoIndividuo(Individuo);
     void nuevoIndividuo(int,int,Individuo);
-    void matarIndividuosViejos();
+    void matarIndividuosViejos(int);
     int getNum_Pobl();
     void matarIndividuo(int);
     Nodo_Arbol* buscarNodo(int);

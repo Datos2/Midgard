@@ -25,7 +25,7 @@ public://se definen los metodos publicos
 }
 
     ~ListaSimple() {//destructor de la clase.
-        this->clearList(); //elimina el objeto.
+         //elimina el objeto.
 }
 
     void insertar(T* valor){//metodo insertar un elemento al inicio.

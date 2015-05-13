@@ -28,31 +28,27 @@ void Arbol_Genealogico::nuevoIndividuo(int id_padre1,int id_padre2,Individuo pcr
     num_Pobl++;
      
 }
-void Arbol_Genealogico::matarIndividuosViejos(){
+void Arbol_Genealogico::matarIndividuosViejos(int edadMax){
     //bool Dwarves;
     int largoPoblacion_total=0;
     while(largoPoblacion_total<num_Pobl){
-        if(tipoPoblacion()==1){
-            if(Dwarves::EdadMuerte(this->poblacionTotal->getElemento(largoPoblacion_total).getThis()->getEdad()));
-               //mata al individuo. 
+            if(edadMax<this->poblacionActual->getElemento(largoPoblacion_total)->getThis()->getEdad()){
+            matarIndividuo(poblacionActual->getElemento(largoPoblacion_total)->getId());
         }
-        else if(tipoPoblacion()==2){
-            if(::Elves.EdadMuerte(this->poblacionTotal->getElemento(largoPoblacion_total).getThis()->getEdad())==true);
-               //mata al individuo. 
-        }
-        else if(tipoPoblacion()==3){
-            if(::DarkElves.EdadMuerte(this->poblacionTotal->getElemento(largoPoblacion_total).getThis()->getEdad())==true);
-               //mata al individuo. 
-        }
-        else if(tipoPoblacion()==4){
-            if(::Giants.EdadMuerte(this->poblacionTotal->getElemento(largoPoblacion_total).getThis()->getEdad())==true);
-               //mata al individuo. 
-        }
-               
+        
         largoPoblacion_total++;
     }
-    
 }
+
+void Arbol_Genealogico::matarIndividuo(int id){
+    int largo=poblacionActual->largoLista();
+    for(int i=0;i<largo;i++){
+        if(id==poblacionActual->getElemento(i)->getId()){
+            poblacionActual->eliminarPos(i);
+        }
+    }
+}
+
 int Arbol_Genealogico::tipoPoblacion(){//retorna un int segun el tipo de pueblo.
         if(this->tipo_poblacion.compare("Dwarves")==0)
             return 1;
@@ -66,9 +62,7 @@ int Arbol_Genealogico::tipoPoblacion(){//retorna un int segun el tipo de pueblo.
 int Arbol_Genealogico::getNum_Pobl(){
     return num_Pobl;
 }
-void Arbol_Genealogico::matarIndividuo(int id){
-    
-}
+
 
 Individuo* Arbol_Genealogico::buscarIndividuo(int pid){
     for(int i=0;i<poblacionActual->largoLista();i++){

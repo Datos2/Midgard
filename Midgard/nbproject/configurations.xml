@@ -2,8 +2,6 @@
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="f3" displayName="Controller" projectFiles="true">
-      <itemPath>TinyXmlLib/GameController.cpp</itemPath>
-      <itemPath>TinyXmlLib/GameController.h</itemPath>
     </logicalFolder>
     <logicalFolder name="f1" displayName="Datos" projectFiles="true">
       <itemPath>Datos/Armas.xml</itemPath>
@@ -49,10 +47,6 @@
       <itemPath>UnionPueblos.h</itemPath>
       <itemPath>reproduccion.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="f4" displayName="LogicController" projectFiles="true">
-      <itemPath>TinyXmlLib/LogicGameController.cpp</itemPath>
-      <itemPath>TinyXmlLib/LogicGameController.h</itemPath>
-    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
@@ -87,10 +81,6 @@
       <itemPath>TinyXmlLib/tinyxml.h</itemPath>
       <itemPath>TinyXmlLib/tinyxmlerror.cpp</itemPath>
       <itemPath>TinyXmlLib/tinyxmlparser.cpp</itemPath>
-    </logicalFolder>
-    <logicalFolder name="f5" displayName="ViewController" projectFiles="true">
-      <itemPath>TinyXmlLib/ViewGameController.cpp</itemPath>
-      <itemPath>TinyXmlLib/ViewGameController.h</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -227,18 +217,6 @@
       <item path="Supremacia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Supremacia.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/GameController.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/GameController.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/LogicGameController.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/LogicGameController.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/ViewGameController.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/ViewGameController.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TinyXmlLib/tinystr.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -382,18 +360,6 @@
       <item path="Supremacia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Supremacia.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/GameController.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/GameController.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/LogicGameController.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/LogicGameController.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/ViewGameController.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TinyXmlLib/ViewGameController.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TinyXmlLib/tinystr.cpp" ex="false" tool="1" flavor2="0">
       </item>
