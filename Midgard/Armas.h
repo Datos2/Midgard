@@ -2,7 +2,7 @@
 
 #ifndef ARMAS_H
 #define	ARMAS_H
-#include "Datos/Xml.h"
+#include "Xml.h"
 #include "Estructuras/ListaSimple.h"
 
 class Armas {

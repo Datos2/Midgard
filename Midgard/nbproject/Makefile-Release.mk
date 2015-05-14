@@ -41,7 +41,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/CienciaTecnologia.o \
 	${OBJECTDIR}/DarkElves.o \
 	${OBJECTDIR}/Datos/Jzon.o \
-	${OBJECTDIR}/Datos/Xml.o \
 	${OBJECTDIR}/Dwarves.o \
 	${OBJECTDIR}/Edda.o \
 	${OBJECTDIR}/Elves.o \
@@ -61,6 +60,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/TinyXmlLib/tinyxmlerror.o \
 	${OBJECTDIR}/TinyXmlLib/tinyxmlparser.o \
 	${OBJECTDIR}/UnionPueblos.o \
+	${OBJECTDIR}/Xml.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/reproduccion.o
 
@@ -118,11 +118,6 @@ ${OBJECTDIR}/Datos/Jzon.o: Datos/Jzon.cpp
 	${MKDIR} -p ${OBJECTDIR}/Datos
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Jzon.o Datos/Jzon.cpp
-
-${OBJECTDIR}/Datos/Xml.o: Datos/Xml.cpp 
-	${MKDIR} -p ${OBJECTDIR}/Datos
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos/Xml.o Datos/Xml.cpp
 
 ${OBJECTDIR}/Dwarves.o: Dwarves.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -218,6 +213,11 @@ ${OBJECTDIR}/UnionPueblos.o: UnionPueblos.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/UnionPueblos.o UnionPueblos.cpp
+
+${OBJECTDIR}/Xml.o: Xml.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Xml.o Xml.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

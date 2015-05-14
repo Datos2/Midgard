@@ -8,8 +8,8 @@
 #ifndef XML_H_
 #define XML_H_
 #include <iostream>
-#include "../TinyXmlLib/tinyxml.h"
-#include "../Estructuras/ListaSimple.h"
+#include   "TinyXmlLib/tinyxml.h"
+#include "Estructuras/ListaSimple.h"
 /*
  * se crea la clase para el manejo de archivos xml.
  */
@@ -23,7 +23,7 @@ public:
 	bool cargar_archivo();//carga el archivo xml.
 	const char* read(const char*);//const char que va a buscar, si esta lo devuelve.
 	const char* printElements();
-	ListaSimple<const char*> getElements();
+	ListaSimple<const char*>* getElements();
 	const char* getArch() const {//get de arch.
 		return arch;
 	}

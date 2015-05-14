@@ -64,14 +64,14 @@ const char* Xml::printElements(){//se imprimen los elementos.
 }
 
 //retorna una lista con los elementos de xml.
-ListaSimple<const char*> Xml::getElements(){//mete en una lista los elementos del xml.
-    ListaSimple<const char*> lista=ListaSimple<const char*>();     
+ListaSimple<const char*>* Xml::getElements(){//mete en una lista los elementos del xml.
+    ListaSimple<const char*> *lista=new ListaSimple<const char*>();     
     TiXmlElement *elemento_actual =file.RootElement()->FirstChildElement();//define la variable como el primer hijo de la raiz
 
     while (elemento_actual!= NULL){		//y compara si el parametro coincide con lo que se busca.
             if(elemento_actual){
                     const char* str=(const char*)elemento_actual->GetText();
-                    lista.insertar(str);
+                    lista->insertar(str);
             }
             elemento_actual =elemento_actual->NextSiblingElement();//sigue recorriendo los elementos.
     }

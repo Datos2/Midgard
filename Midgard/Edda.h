@@ -3,8 +3,8 @@
 #ifndef EDDA_H
 #define	EDDA_H
 #include  "Estructuras/ListaSimple.h"
-#include "Armas.h"
-#include "Datos/Xml.h"
+#include  "Armas.h"
+#include "Xml.h"
 
 class Edda {
 public:

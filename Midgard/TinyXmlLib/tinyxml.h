@@ -665,7 +665,7 @@ public:
 	TiXmlElement* FirstChildElement() {
 		return const_cast< TiXmlElement* >( (const_cast< const TiXmlNode* >(this))->FirstChildElement() );
 	}
-
+        
 	/// Convenience function to get through elements.
 	const TiXmlElement* FirstChildElement( const char * _value ) const;
 	TiXmlElement* FirstChildElement( const char * _value ) {
