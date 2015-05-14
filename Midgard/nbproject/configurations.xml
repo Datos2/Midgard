@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f3" displayName="Controller" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="Datos" projectFiles="true">
+      <itemPath>Datos/Armas.xml</itemPath>
+      <itemPath>Datos/Xml.cpp</itemPath>
+      <itemPath>Datos/Xml.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f2" displayName="Estructuras" projectFiles="true">
+      <itemPath>Estructuras/Arbol_Genealogico.cpp</itemPath>
+      <itemPath>Estructuras/Arbol_Genealogico.h</itemPath>
+      <itemPath>Estructuras/BitVector.cpp</itemPath>
+      <itemPath>Estructuras/BitVector.h</itemPath>
+      <itemPath>Estructuras/ListaSimple.h</itemPath>
+      <itemPath>Estructuras/Nodo.h</itemPath>
+      <itemPath>Estructuras/Nodo_Arbol.cpp</itemPath>
+      <itemPath>Estructuras/Nodo_Arbol.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Armas.h</itemPath>
+      <itemPath>Barbara.h</itemPath>
+      <itemPath>Batalla.h</itemPath>
+      <itemPath>CienciaTecnologia.h</itemPath>
+      <itemPath>DarkElves.h</itemPath>
+      <itemPath>Dwarves.h</itemPath>
+      <itemPath>Edda.h</itemPath>
+      <itemPath>Elves.h</itemPath>
+      <itemPath>FeSupersticion.h</itemPath>
+      <itemPath>Giants.h</itemPath>
+      <itemPath>Individuo.h</itemPath>
+      <itemPath>Mundo.h</itemPath>
+      <itemPath>Pueblo.h</itemPath>
+      <itemPath>Supremacia.h</itemPath>
+      <itemPath>UnionPueblos.h</itemPath>
+      <itemPath>reproduccion.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Armas.cpp</itemPath>
+      <itemPath>Barbara.cpp</itemPath>
+      <itemPath>Batalla.cpp</itemPath>
+      <itemPath>CienciaTecnologia.cpp</itemPath>
+      <itemPath>DarkElves.cpp</itemPath>
+      <itemPath>Dwarves.cpp</itemPath>
+      <itemPath>Edda.cpp</itemPath>
+      <itemPath>Elves.cpp</itemPath>
+      <itemPath>FeSupersticion.cpp</itemPath>
+      <itemPath>Giants.cpp</itemPath>
+      <itemPath>Individuo.cpp</itemPath>
+      <itemPath>LDMM.xml</itemPath>
+      <itemPath>Mundo.cpp</itemPath>
+      <itemPath>Pueblo.cpp</itemPath>
+      <itemPath>Supremacia.cpp</itemPath>
+      <itemPath>UnionPueblos.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>reproduccion.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TinyXmlLib" displayName="TinyXmlLib" projectFiles="true">
+      <itemPath>TinyXmlLib/tinystr.cpp</itemPath>
+      <itemPath>TinyXmlLib/tinystr.h</itemPath>
+      <itemPath>TinyXmlLib/tinyxml.cpp</itemPath>
+      <itemPath>TinyXmlLib/tinyxml.h</itemPath>
+      <itemPath>TinyXmlLib/tinyxmlerror.cpp</itemPath>
+      <itemPath>TinyXmlLib/tinyxmlparser.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>TinyXmlLib</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="Armas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Armas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Barbara.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Barbara.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Batalla.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Batalla.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CienciaTecnologia.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CienciaTecnologia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DarkElves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DarkElves.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/Armas.xml" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/Xml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Datos/Xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Dwarves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Dwarves.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Edda.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Edda.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Elves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Elves.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Arbol_Genealogico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/Arbol_Genealogico.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/BitVector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/BitVector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/ListaSimple.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo_Arbol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo_Arbol.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FeSupersticion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FeSupersticion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Giants.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Giants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Individuo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Individuo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LDMM.xml" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Mundo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pueblo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pueblo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Supremacia.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Supremacia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinystr.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinystr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinyxml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinyxml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinyxmlerror.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinyxmlparser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="UnionPueblos.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="UnionPueblos.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="reproduccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="reproduccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Armas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Armas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Barbara.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Barbara.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Batalla.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Batalla.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CienciaTecnologia.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CienciaTecnologia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DarkElves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DarkElves.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/Armas.xml" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Datos/Xml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Datos/Xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Dwarves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Dwarves.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Edda.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Edda.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Elves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Elves.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Arbol_Genealogico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/Arbol_Genealogico.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/BitVector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/BitVector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/ListaSimple.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo_Arbol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estructuras/Nodo_Arbol.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FeSupersticion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FeSupersticion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Giants.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Giants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Individuo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Individuo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LDMM.xml" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Mundo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pueblo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pueblo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Supremacia.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Supremacia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinystr.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinystr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinyxml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinyxml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinyxmlerror.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TinyXmlLib/tinyxmlparser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="UnionPueblos.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="UnionPueblos.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="reproduccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="reproduccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
