@@ -10,11 +10,14 @@
 
 #include <iostream>
 #include <cstdio>
+#include <time.h> 
 #include "Nodo_Arbol.h"
 #include "ListaSimple.h"
 #include "../Individuo.h"
+#include "../reproduccion.h"
 
 using namespace std;
+using namespace reproduccion;
 
 class Arbol_Genealogico {//clase lista
 private:
@@ -38,6 +41,8 @@ public://se definen los metodos publicos
     void setTipo_poblacion(string tipo_poblacion);
     string getTipo_poblacion();
     int tipoPoblacion();
+    void nuevaGeneracion();
+    Individuo* getPadre(int);
     
 };
 

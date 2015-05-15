@@ -6,7 +6,7 @@
  */
 
 #include "Xml.h"
-#include "tinyxml.h"
+#include "../TinyXmlLib/tinyxml.h"
 using namespace std;
 
 

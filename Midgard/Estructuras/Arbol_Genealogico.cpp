@@ -92,6 +92,7 @@ Nodo_Arbol* Arbol_Genealogico::buscarNodo(int pid){
     }
 }
 void Arbol_Genealogico::poblacionInicial(int numPoblacion,int HP,int spd,int def,int Int,int MP,int VIT,int blot,int runes){
+    srand (time(NULL));//.......................................................................................
     for(int i=0;i<numPoblacion;i++){
         BitVector* newBit=new BitVector(32*8);
         int* newArray=new int[8];
@@ -108,4 +109,44 @@ void Arbol_Genealogico::poblacionInicial(int numPoblacion,int HP,int spd,int def
         nuevoIndividuo(newInd);
     }
      
+}
+
+
+void Arbol_Genealogico::nuevaGeneracion(){
+    srand (time(NULL));//.......................................................................................
+    ListaSimple<Individuo *> poblacion;
+
+    int cantidadNacimientos=int(poblacionActual->largoLista()/3);
+    int maxFit=maxFitness(poblacionActual);
+    for(int i = 0; i < poblacionActual->largoLista(); i++){
+        poblacion.insertar(poblacionActual->getElemento(i)->getThis());
+    }
+    for(int j = 0; j < cantidadNacimientos; j++){
+        Individuo* padre1;
+        Individuo* padre2;
+        int rand1=rand()%maxFit;
+        int rand2=rand()%maxFit;
+        for(int g = 0; g < poblacion.largoLista(); g++){
+            if(fitnessInd(poblacion.getElemento(g))>=rand1){
+                padre1=poblacion.getElemento(g);
+                poblacion.eliminarPos(g);
+            }
+        }
+        for(int f = 0; f < poblacion.largoLista(); f++){
+            if(fitnessInd(poblacion.getElemento(f))>=rand1){
+                padre2=poblacion.getElemento(f);
+                poblacion.eliminarPos(f);
+            }
+            
+        }
+        Individuo Bebe1=cruce(rand(),padre1,padre2);
+        Individuo Bebe2=cruce(rand(),padre2,padre1);
+        nuevoIndividuo(padre1->getId(),padre2->getId(),Bebe1);
+        nuevoIndividuo(padre1->getId(),padre2->getId(),Bebe2);
+        
+    }
+}
+
+Individuo* Arbol_Genealogico::getPadre(int fitness){
+    
 }
