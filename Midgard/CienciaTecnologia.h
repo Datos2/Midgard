@@ -9,7 +9,7 @@ class CienciaTecnologia: public Edda {
 public:
     CienciaTecnologia();
     virtual ~CienciaTecnologia();
-    bool verifica_inteligencia_ciencia(Pueblo*);
+    bool verifica_inteligencia_ciencia(Pueblo);
 private:
 
 };
