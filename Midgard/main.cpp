@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <sstream>
 #include <string>
-#include <QThread>
+
 
 using namespace std; 
  

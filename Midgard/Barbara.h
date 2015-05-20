@@ -2,8 +2,8 @@
 
 #ifndef BARBARA_H
 #define	BARBARA_H
-#include "Edda.h"
 #include "Pueblo.h"
+#include "Edda.h"
 
 class Barbara: public Edda {
 public:
@@ -11,7 +11,7 @@ public:
     ~Barbara();
     void setArmas();
     void uso_armas();
-    bool verifica_supersticion(Pueblo);
+    bool verifica_supersticion_barbara(Pueblo);
       
     
 private:

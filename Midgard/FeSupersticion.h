@@ -7,7 +7,7 @@ class FeSupersticion: public Edda {
 public:
     FeSupersticion();
     virtual ~FeSupersticion();
-    bool verifica_inteligencia(Pueblo* pueb);
+    bool verifica_inteligencia_supersticion(Pueblo* pueb);
 private:
 
 };

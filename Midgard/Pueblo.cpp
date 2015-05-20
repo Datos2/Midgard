@@ -10,7 +10,7 @@ void Pueblo::SetEdda_actual(Edda edda_actual) {
     this->edda_actual = edda_actual;
 }
 
-Edda* Pueblo::GetEdda_actual(){
+Edda Pueblo::GetEdda_actual(){
     return edda_actual;
 }
 
@@ -130,7 +130,7 @@ Pueblo::Pueblo(string ptipo,int pvida_max,int pataque_max,int pdefensa_max,
     velocidad_max=pvelocidad_max;
     tipo=ptipo;
     experiencia=0;
-    edda_actual=Barbara();
+    edda_actual;
     supersticion=rm.numeroAleatorio(1,10);
 }
 Pueblo::~Pueblo(){

@@ -13,6 +13,7 @@ Combate::Combate() {
 Combate::~Combate() {
 }
 
+//se escoge aleatoriamente quien golpea primero.
 void Combate::pelea(Individuo individuo1,Individuo individuo2){
     randomGenerator ran;
     if(ran.numeroAleatorio(0,100)<50)//si el numero aleatorio es menor a 50, entonces el individuo1 ataca.

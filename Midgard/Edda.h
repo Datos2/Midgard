@@ -6,7 +6,8 @@
 #include  "Armas.h"
 #include "Xml.h"
 #include "randomGenerator.h"
-#include "Pueblo.h"
+
+
 class Edda {
 public:
     Edda();

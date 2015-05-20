@@ -7,11 +7,7 @@
 #include "Estructuras/Arbol_Genealogico.h"
 #include "Edda.h"
 #include "randomGenerator.h"
-#include "Barbara.h"
-//#include "CienciaTecnologia.h"
-//#include "FeSupersticion.h"
-//#include "Supremacia.h"
-//#include "UnionPueblos.h"
+
 using namespace std; 
 
 class Pueblo {
@@ -30,8 +26,8 @@ public:
     Arbol_Genealogico GetArbol_genealogico_pueblo();
     void SetStrEdda_actual(string edda_actual);
     string GetStrEdda_actual();
-    void SetEdda_actual(Edda*);
-    Edda* GetEdda_actual();
+    void SetEdda_actual(Edda);
+    Edda GetEdda_actual();
     void SetSupersticion_max(int supersticion_max);
     int GetSupersticion_max() ;
     void SetRunes_max(int runes_max);
@@ -65,7 +61,7 @@ private:
     //caracteristicas que seran mas altas o mas bajas dependiendo de la poblacion.
     Arbol_Genealogico arbol_genealogico_pueblo;
     string str_edda_actual;//edda actual de cada poblacion.
-    Edda* edda_actual;
+    Edda edda_actual;
     
 };
 
