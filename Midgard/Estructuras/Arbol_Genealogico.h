@@ -38,6 +38,10 @@ public://se definen los metodos publicos
     void setTipo_poblacion(string tipo_poblacion);
     string getTipo_poblacion();
     int tipoPoblacion();
+    void setPoblacionTotal(ListaSimple<Nodo_Arbol>* poblacionTotal);
+    ListaSimple<Nodo_Arbol>* getPoblacionTotal();
+    void setPoblacionActual(ListaSimple<Nodo_Arbol*>* poblacionActual);
+    ListaSimple<Nodo_Arbol*>* getPoblacionActual() ;
     
 };
 

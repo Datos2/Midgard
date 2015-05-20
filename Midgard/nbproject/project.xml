@@ -11,6 +11,10 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>TinyXmlLib</sourceRootElem>
+                <sourceRootElem>../../../Qt5.3.0/5.3/gcc_64/include/QtConcurrent</sourceRootElem>
+                <sourceRootElem>../../../Qt5.3.0/5.3/gcc_64/include/QtCore</sourceRootElem>
+                <sourceRootElem>../../../Qt5.3.0/5.3/gcc_64/include/QtGui</sourceRootElem>
+                <sourceRootElem>../../../Qt5.3.0/5.3/gcc_64/include/QtUiTools</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

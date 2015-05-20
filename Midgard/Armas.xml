@@ -1,14 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <armas>
 <arma1>Garrote</arma1>
+<danoarma1>5</danoarma1>
 <arma2>Arcoyflecha</arma2>
+<danoarma2>10</danoarma2>
 <arma3>Lanza</arma3>
+<danoarma3>15</danoarma3>
 <arma4>Espada</arma4>
+<danoarma4>20</danoarma4>
 <arma5>Hacha</arma5>
+<danoarma5>25</danoarma5>
 <arma6>Maza</arma6>
+<danoarma6>30</danoarma6>
 <arma7>Cañón</arma7>
+<danoarma7>50</danoarma7>
 <arma8>Rifle</arma8>
+<danoarma8>40</danoarma8>
 <arma9>Pistola</arma9>
+<danoarma9>35</danoarma9>
 <arma10>Granada</arma10>
+<danoarma10>45</danoarma10>
 <arma11>EspadaLaser</arma11>
+<danoarma11>30</danoarma11>
 </armas>

@@ -5,8 +5,14 @@
 #include "Estructuras/ListaSimple.h" 
 #include "Individuo.h"
 #include "Estructuras/Arbol_Genealogico.h"
-
-using namespace std;
+#include "Edda.h"
+#include "randomGenerator.h"
+#include "Barbara.h"
+//#include "CienciaTecnologia.h"
+//#include "FeSupersticion.h"
+//#include "Supremacia.h"
+//#include "UnionPueblos.h"
+using namespace std; 
 
 class Pueblo {
 public:
@@ -22,16 +28,44 @@ public:
     virtual bool EdadParaPelea(int);
     void SetArbol_genealogico_pueblo(Arbol_Genealogico arbol_genealogico_pueblo);
     Arbol_Genealogico GetArbol_genealogico_pueblo();
-    void SetEdda_actual(string edda_actual);
-    string GetEdda_actual();
+    void SetStrEdda_actual(string edda_actual);
+    string GetStrEdda_actual();
+    void SetEdda_actual(Edda*);
+    Edda* GetEdda_actual();
+    void SetSupersticion_max(int supersticion_max);
+    int GetSupersticion_max() ;
+    void SetRunes_max(int runes_max);
+    int GetRunes_max() ;
+    void SetBlot_max(int blot_max);
+    int GetBlot_max() ;
+    void SetEnergiavital_max(int energiavital_max);
+    int GetEnergiavital_max() ;
+    void SetMagia_max(int magia_max);
+    int GetMagia_max() ;
+    void SetInteligencia_max(int inteligencia_max);
+    int GetInteligencia_max() ;
+    void SetVelocidad_max(int velocidad_max);
+    int GetVelocidad_max() ;
+    void SetDefensa_max(int defensa_max);
+    int GetDefensa_max() ;
+    void SetAtaque_max(int ataque_max);
+    int GetAtaque_max() ;
+    void SetVida_max(int vida_max);
+    int GetVida_max();
+    void SetExperiencia(int experiencia);
+    int GetExperiencia();
+    void SetSupersticion(int supersticion);
+    int GetSupersticion(); 
+    
 private:
     ListaSimple<Individuo>* lista_criaturas;
     string tipo;//ya sea tipo elves, dark elves, entre otros.
     int vida_max,ataque_max,defensa_max,velocidad_max,inteligencia_max,magia_max,
-    energiavital_max,blot_max,runes_max,supersticion_max;
+    energiavital_max,blot_max,runes_max,supersticion_max, experiencia,supersticion;
     //caracteristicas que seran mas altas o mas bajas dependiendo de la poblacion.
     Arbol_Genealogico arbol_genealogico_pueblo;
-    string edda_actual;//edda actual de cada poblacion.
+    string str_edda_actual;//edda actual de cada poblacion.
+    Edda* edda_actual;
     
 };
 

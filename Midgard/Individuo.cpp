@@ -94,7 +94,12 @@ int Individuo::getRunes(){
 void Individuo::setEdad(int edad) {
     this->edad = edad;
 }
-
+ 
 int Individuo::getEdad(){
     return edad;
 }
+
+bool Individuo::estamuerto(){//verifica si el individuo esta muerto.
+return this->edad==0;}
+
+void Individuo::matarIndividuo(){this->~Individuo();}//lo elimina de la lista, y de todo.

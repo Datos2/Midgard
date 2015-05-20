@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Barbara.o \
 	${OBJECTDIR}/Batalla.o \
 	${OBJECTDIR}/CienciaTecnologia.o \
+	${OBJECTDIR}/Combate.o \
 	${OBJECTDIR}/DarkElves.o \
 	${OBJECTDIR}/Datos/Jzon.o \
 	${OBJECTDIR}/Dwarves.o \
@@ -62,6 +63,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/UnionPueblos.o \
 	${OBJECTDIR}/Xml.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/randomGenerator.o \
+	${OBJECTDIR}/readSerial.o \
 	${OBJECTDIR}/reproduccion.o
 
 
@@ -108,6 +111,11 @@ ${OBJECTDIR}/CienciaTecnologia.o: CienciaTecnologia.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CienciaTecnologia.o CienciaTecnologia.cpp
+
+${OBJECTDIR}/Combate.o: Combate.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Combate.o Combate.cpp
 
 ${OBJECTDIR}/DarkElves.o: DarkElves.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -223,6 +231,16 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/randomGenerator.o: randomGenerator.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/randomGenerator.o randomGenerator.cpp
+
+${OBJECTDIR}/readSerial.o: readSerial.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/readSerial.o readSerial.cpp
 
 ${OBJECTDIR}/reproduccion.o: reproduccion.cpp 
 	${MKDIR} -p ${OBJECTDIR}

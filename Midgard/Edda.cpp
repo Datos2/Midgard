@@ -4,6 +4,7 @@
 
 Edda::Edda() {
     duracion=0;
+    armas_edda= Armas();
 }
 
 Edda::~Edda() {
@@ -19,13 +20,18 @@ int Edda::GetDuracion(){
 
 void Edda::setArmas(){}
 
-void Edda::SetArmas_edda(ListaSimple<Armas>* armas_edda) {
+
+
+int Edda::randomNumero(int inicial,int final){
+    randomGenerator ran;
+    return ran.numeroAleatorio(inicial,final);
+}
+
+void Edda::SetArmas_edda(Armas armas_edda) {
     this->armas_edda = armas_edda;
 }
 
-ListaSimple<Armas>*Edda::GetArmas_edda(){
+Armas Edda::GetArmas_edda() {
     return armas_edda;
 }
-
-
 

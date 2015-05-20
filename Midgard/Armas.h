@@ -11,6 +11,7 @@ public:
     virtual ~Armas();
     void SetTotal_armas();
     ListaSimple<const char*>* GetTotal_armas();
+   // int danoarma(int);//setea el daño de cada arma.
 private:
     ListaSimple<const char*>* total_armas;
 };

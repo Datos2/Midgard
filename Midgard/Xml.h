@@ -10,6 +10,10 @@
 #include <iostream>
 #include   "TinyXmlLib/tinyxml.h"
 #include "Estructuras/ListaSimple.h"
+#include <sstream>
+#include <string>
+#include <stdio.h>
+using namespace std;
 /*
  * se crea la clase para el manejo de archivos xml.
  */
@@ -39,6 +43,7 @@ public:
 	void setFile(const TiXmlDocument& file) {//set del archivo.
 		this->file = file;
 	}
+        string IntToString(int);
 };
 
 #endif /* XML_H_ */

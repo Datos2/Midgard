@@ -29,7 +29,8 @@ public:
     virtual int getRunes();
     void setEdad(int edad);
     int getEdad();
-    
+    bool estamuerto();
+    void matarIndividuo();//mata al individuo.
 protected:
     static int idCriat;///variable contador para ir poniendo el id
     BitVector* _stats;//vida,velocidad,defensa,inteligencia,magia,energia_vital,blot,runes

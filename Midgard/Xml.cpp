@@ -14,6 +14,7 @@ using namespace std;
 Xml::Xml(const char* pfile){//contructor con el nombre del xml.
 	arch=pfile;//lo asigna al atributo de la clase.
 	TiXmlDocument doc(arch);//inicializa el documento con el nombre del archivo.
+        cout<<doc.LoadFile(arch)<<endl;
 	file=doc;
 }
 
@@ -69,12 +70,19 @@ ListaSimple<const char*>* Xml::getElements(){//mete en una lista los elementos d
     TiXmlElement *elemento_actual =file.RootElement()->FirstChildElement();//define la variable como el primer hijo de la raiz
 
     while (elemento_actual!= NULL){		//y compara si el parametro coincide con lo que se busca.
-            if(elemento_actual){
-                    const char* str=(const char*)elemento_actual->GetText();
+            if(elemento_actual){                 
+                const char* str=(const char*)elemento_actual->GetText();
                     lista->insertar(str);
             }
             elemento_actual =elemento_actual->NextSiblingElement();//sigue recorriendo los elementos.
     }
 return lista;//retorna elemento.
 
+}
+ 
+ 
+string Xml::IntToString(int N){
+    ostringstream ss("");
+    ss << N;
+    return ss.str();
 }

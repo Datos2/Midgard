@@ -59,6 +59,22 @@ int Arbol_Genealogico::tipoPoblacion(){//retorna un int segun el tipo de pueblo.
         else if(this->tipo_poblacion.compare("Giants")==0)
             return 4;
 }
+
+void Arbol_Genealogico::setPoblacionTotal(ListaSimple<Nodo_Arbol>* poblacionTotal) {
+    this->poblacionTotal = poblacionTotal;
+}
+
+ListaSimple<Nodo_Arbol>* Arbol_Genealogico::getPoblacionTotal(){
+    return poblacionTotal;
+}
+
+void Arbol_Genealogico::setPoblacionActual(ListaSimple<Nodo_Arbol*>* poblacionActual) {
+    this->poblacionActual = poblacionActual;
+}
+
+ListaSimple<Nodo_Arbol*>* Arbol_Genealogico::getPoblacionActual(){
+    return poblacionActual;
+}
 int Arbol_Genealogico::getNum_Pobl(){
     return num_Pobl;
 }

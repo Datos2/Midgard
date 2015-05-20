@@ -7,9 +7,10 @@
       <itemPath>Armas.xml</itemPath>
       <itemPath>Datos/Jzon.cpp</itemPath>
       <itemPath>Datos/Jzon.h</itemPath>
-      <itemPath>LDMM.xml</itemPath>
       <itemPath>Xml.cpp</itemPath>
       <itemPath>Xml.h</itemPath>
+      <itemPath>readSerial.cpp</itemPath>
+      <itemPath>readSerial.h</itemPath>
     </logicalFolder>
     <logicalFolder name="f2" displayName="Estructuras" projectFiles="true">
       <itemPath>Estructuras/Arbol_Genealogico.cpp</itemPath>
@@ -34,6 +35,7 @@
       <itemPath>Barbara.h</itemPath>
       <itemPath>Batalla.h</itemPath>
       <itemPath>CienciaTecnologia.h</itemPath>
+      <itemPath>Combate.h</itemPath>
       <itemPath>DarkElves.h</itemPath>
       <itemPath>Dwarves.h</itemPath>
       <itemPath>Edda.h</itemPath>
@@ -45,11 +47,13 @@
       <itemPath>Pueblo.h</itemPath>
       <itemPath>Supremacia.h</itemPath>
       <itemPath>UnionPueblos.h</itemPath>
+      <itemPath>randomGenerator.h</itemPath>
       <itemPath>reproduccion.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>ThreadsMidgard.ui</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -58,6 +62,7 @@
       <itemPath>Barbara.cpp</itemPath>
       <itemPath>Batalla.cpp</itemPath>
       <itemPath>CienciaTecnologia.cpp</itemPath>
+      <itemPath>Combate.cpp</itemPath>
       <itemPath>DarkElves.cpp</itemPath>
       <itemPath>Dwarves.cpp</itemPath>
       <itemPath>Edda.cpp</itemPath>
@@ -70,6 +75,7 @@
       <itemPath>Supremacia.cpp</itemPath>
       <itemPath>UnionPueblos.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>randomGenerator.cpp</itemPath>
       <itemPath>reproduccion.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TinyXmlLib" displayName="TinyXmlLib" projectFiles="true">
@@ -105,6 +111,10 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>TinyXmlLib</Elem>
+    <Elem>../../../Qt5.3.0/5.3/gcc_64/include/QtConcurrent</Elem>
+    <Elem>../../../Qt5.3.0/5.3/gcc_64/include/QtCore</Elem>
+    <Elem>../../../Qt5.3.0/5.3/gcc_64/include/QtGui</Elem>
+    <Elem>../../../Qt5.3.0/5.3/gcc_64/include/QtUiTools</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -133,6 +143,10 @@
       <item path="CienciaTecnologia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CienciaTecnologia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Combate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Combate.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="DarkElves.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -194,8 +208,6 @@
       </item>
       <item path="Individuo.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="LDMM.xml" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Mundo.h" ex="false" tool="3" flavor2="0">
@@ -207,6 +219,8 @@
       <item path="Supremacia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Supremacia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ThreadsMidgard.ui" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TinyXmlLib/tinystr.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -229,6 +243,14 @@
       <item path="Xml.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="randomGenerator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="randomGenerator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="readSerial.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="readSerial.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="reproduccion.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -273,6 +295,10 @@
       </item>
       <item path="CienciaTecnologia.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Combate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Combate.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="DarkElves.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="DarkElves.h" ex="false" tool="3" flavor2="0">
@@ -333,8 +359,6 @@
       </item>
       <item path="Individuo.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="LDMM.xml" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Mundo.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Mundo.h" ex="false" tool="3" flavor2="0">
@@ -346,6 +370,8 @@
       <item path="Supremacia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Supremacia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ThreadsMidgard.ui" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TinyXmlLib/tinystr.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -368,6 +394,14 @@
       <item path="Xml.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="randomGenerator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="randomGenerator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="readSerial.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="readSerial.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="reproduccion.cpp" ex="false" tool="1" flavor2="0">
       </item>
