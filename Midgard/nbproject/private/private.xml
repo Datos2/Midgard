@@ -17,9 +17,11 @@
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/FeSupersticion.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/UnionPueblos.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/UnionPueblos.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/parametrosgiants.xml</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/Arbol_Genealogico.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/readSerial.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Supremacia.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/parametrosdwarves.xml</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Batalla.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/DarkElves.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Armas.cpp</file>
@@ -28,6 +30,7 @@
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Edda.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Giants.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/ListaSimple.h</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/parametrosdarkelves.xml</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/TinyXmlLib/tinyxml.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Combate.h</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Edda.h</file>
@@ -51,6 +54,8 @@
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Mundo.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Elves.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Batalla.cpp</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Makefile</file>
+            <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/parametroselves.xml</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Individuo.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/nodoGrafo.cpp</file>
             <file>file:/home/steven/NetBeansProjects/Midgard/Midgard/Estructuras/linkedNode.h</file>

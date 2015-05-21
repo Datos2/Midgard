@@ -3,7 +3,26 @@
 #include  "Barbara.h"
 Pueblo::Pueblo(){ 
     lista_criaturas=new ListaSimple<Individuo>();
-    tipo;
+   
+   
+}
+
+Pueblo::Pueblo(const char* nombre){ 
+    lista_criaturas=new ListaSimple<Individuo>();
+    Xml xml(nombre);
+    ListaSimple<const char*>* parametros_pueblos=new ListaSimple<const char*>();
+    parametros_pueblos=xml.getElements();
+    this->vida_max=atoi(parametros_pueblos->getElemento(9));
+    this->ataque_max=atoi(parametros_pueblos->getElemento(8));
+    this->defensa_max=atoi(parametros_pueblos->getElemento(7));
+    this->velocidad_max=atoi(parametros_pueblos->getElemento(6));
+    this->inteligencia_max=atoi(parametros_pueblos->getElemento(5));
+    this->magia_max=atoi(parametros_pueblos->getElemento(4));
+    this->energiavital_max=atoi(parametros_pueblos->getElemento(3));
+    this->blot_max=atoi(parametros_pueblos->getElemento(2));
+    this->runes_max=atoi(parametros_pueblos->getElemento(1));
+    this->supersticion_max=atoi(parametros_pueblos->getElemento(0));
+    this->tipo=nombre;
 }
 
 void Pueblo::SetEdda_actual(Edda edda_actual) {
@@ -109,11 +128,8 @@ void Pueblo::SetSupersticion(int supersticion) {
 int Pueblo::GetSupersticion() {
     return supersticion;
 }
-Pueblo::Pueblo(string ptipo) {
-    lista_criaturas=new ListaSimple<Individuo>();
-    tipo=ptipo;
-}
-Pueblo::Pueblo(string ptipo,int pvida_max,int pataque_max,int pdefensa_max,
+
+Pueblo::Pueblo(const char* ptipo,int pvida_max,int pataque_max,int pdefensa_max,
     int pvelocidad_max,int pinteligencia_max,int pmagia_max,
     int penergiavital_max,int pblot_max,int prunes_max,int psupersticion_max) {
     randomGenerator rm;
@@ -138,11 +154,11 @@ Pueblo::~Pueblo(){
   //  tipo.erase(0,tipo.npos);
 }
 
-void Pueblo::SetTipo(string tipo) {
+void Pueblo::SetTipo(const char* tipo) {
     this->tipo = tipo;
 }
 
-string Pueblo::GetTipo(){
+const char* Pueblo::GetTipo(){
     return tipo;
 }
 
@@ -164,11 +180,11 @@ Arbol_Genealogico Pueblo::GetArbol_genealogico_pueblo(){
     return arbol_genealogico_pueblo;
 }
 
-void Pueblo::SetStrEdda_actual(string edda_actual) {
+void Pueblo::SetStrEdda_actual(const char* edda_actual) {
     this->str_edda_actual = edda_actual;
 }
 
-string Pueblo::GetStrEdda_actual()  {
+const char* Pueblo::GetStrEdda_actual()  {
     return str_edda_actual;
 }
 

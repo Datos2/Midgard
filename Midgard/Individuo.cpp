@@ -1,5 +1,5 @@
 #include "Individuo.h"
-#include "Individuo.h"
+
 int Individuo::idCriat=1;
 Individuo::Individuo() {
 }
@@ -29,6 +29,17 @@ Individuo::Individuo(string ptipo,BitVector* vector){
     
     idCriat++;
     _stats=vector;
+}
+Individuo::Individuo(string ptipo,BitVector* vector,int ph){
+    
+    this->id=idCriat;
+    this->tipo=ptipo;
+    edad=1;
+    experiencia=0;
+    
+    idCriat++;
+    _stats=vector;
+    
 }
 
 BitVector* Individuo::getBitVector(){
@@ -67,6 +78,9 @@ void Individuo::setRunes(int pstat){
     _stats->setNum(pstat,7);
 }
 int Individuo::getHP(){
+    return HP;
+}
+int Individuo::getATK(){
     return _stats->getValue(0);
 }
 int Individuo::getSpeed(){
@@ -94,12 +108,7 @@ int Individuo::getRunes(){
 void Individuo::setEdad(int edad) {
     this->edad = edad;
 }
- 
+
 int Individuo::getEdad(){
     return edad;
 }
-
-bool Individuo::estamuerto(){//verifica si el individuo esta muerto.
-return this->edad==0;}
-
-void Individuo::matarIndividuo(){this->~Individuo();}//lo elimina de la lista, y de todo.

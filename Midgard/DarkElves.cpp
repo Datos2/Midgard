@@ -8,14 +8,14 @@ DarkElves::DarkElves(){
    // magia,energia_vital,blot,runes,supersticion,genero=random;
     //id;  
 }
-DarkElves::DarkElves(string){
+DarkElves::DarkElves(const char*){
   
     
    // velocidad,defensa,inteligencia,
    // magia,energia_vital,blot,runes,supersticion,genero=random;
     //id;
 }
-DarkElves::DarkElves(string ptipo,int pvida_max,int pataque_max,int pdefensa_max,
+DarkElves::DarkElves(const char* ptipo,int pvida_max,int pataque_max,int pdefensa_max,
     int pvelocidad_max,int pinteligencia_max,int pmagia_max,
     int penergiavital_max,int pblot_max,int prunes_max,int psupersticion_max)
     

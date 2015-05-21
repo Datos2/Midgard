@@ -7,25 +7,25 @@
 #include "Estructuras/Arbol_Genealogico.h"
 #include "Edda.h"
 #include "randomGenerator.h"
-
+#include <cstdlib>
 using namespace std; 
 
 class Pueblo {
 public:
     Pueblo();
-    Pueblo(string ptipo);
-    Pueblo(string,int,int,int,int,int,int,int,int,int,int);
+    Pueblo(const char*);
+    Pueblo(const char*,int,int,int,int,int,int,int,int,int,int);
     virtual ~Pueblo();
-    void SetTipo(string tipo);
-    string GetTipo();
+    void SetTipo(const char* tipo);
+    const char* GetTipo();
     void SetLista_criaturas(ListaSimple<Individuo>* lista_criaturas);
     ListaSimple<Individuo>* GetLista_criaturas();
     virtual bool EdadMuerte(int);
     virtual bool EdadParaPelea(int);
     void SetArbol_genealogico_pueblo(Arbol_Genealogico arbol_genealogico_pueblo);
     Arbol_Genealogico GetArbol_genealogico_pueblo();
-    void SetStrEdda_actual(string edda_actual);
-    string GetStrEdda_actual();
+    void SetStrEdda_actual(const char* edda_actual);
+    const char* GetStrEdda_actual();
     void SetEdda_actual(Edda);
     Edda GetEdda_actual();
     void SetSupersticion_max(int supersticion_max);
@@ -55,13 +55,14 @@ public:
     
 private:
     ListaSimple<Individuo>* lista_criaturas;
-    string tipo;//ya sea tipo elves, dark elves, entre otros.
+    const char* tipo;//ya sea tipo elves, dark elves, entre otros.
     int vida_max,ataque_max,defensa_max,velocidad_max,inteligencia_max,magia_max,
     energiavital_max,blot_max,runes_max,supersticion_max, experiencia,supersticion;
     //caracteristicas que seran mas altas o mas bajas dependiendo de la poblacion.
     Arbol_Genealogico arbol_genealogico_pueblo;
-    string str_edda_actual;//edda actual de cada poblacion.
+    const char* str_edda_actual;//edda actual de cada poblacion.
     Edda edda_actual;
+    
     
 };
 

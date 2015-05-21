@@ -9,6 +9,7 @@
 #include "Dwarves.h"
 #include "Elves.h"
 #include "Giants.h"
+#include "Xml.h"
 
 class Mundo {
 public:
@@ -18,6 +19,8 @@ public:
     void SetPoblaciones(ListaSimple<Pueblo>* poblaciones);
     ListaSimple<Pueblo> *GetPoblaciones();
     ListaSimple<Pueblo>*generarPoblacionInicial();
+    int Combate(Individuo*, Individuo*);
+    
 private:
     ListaSimple<Pueblo>* poblaciones;
 };

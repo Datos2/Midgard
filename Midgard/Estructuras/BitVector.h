@@ -15,7 +15,7 @@
 using namespace std;
 
 class BitVector{
-   //int* vector;
+   
    int _size;
 public:
     int* vector;

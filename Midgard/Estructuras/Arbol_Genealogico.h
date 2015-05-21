@@ -7,14 +7,14 @@
  
 #ifndef ARBOL_GENEALOGICO_H
 #define	ARBOL_GENEALOGICO_H
-
 #include <iostream>
 #include <cstdio>
 #include "Nodo_Arbol.h"
 #include "ListaSimple.h"
 #include "../Individuo.h"
-
+#include "../reproduccion.h"
 using namespace std;
+using namespace reproduccion;
 
 class Arbol_Genealogico {//clase lista
 private:
@@ -27,7 +27,7 @@ public://se definen los metodos publicos
     Arbol_Genealogico();
 
     ~Arbol_Genealogico();
-    void poblacionInicial(int,int,int,int,int,int,int,int,int);
+    void poblacionInicial(int, int, int, int, int, int, int, int, int, int);
     void nuevoIndividuo(Individuo);
     void nuevoIndividuo(int,int,Individuo);
     void matarIndividuosViejos(int);
@@ -42,6 +42,7 @@ public://se definen los metodos publicos
     ListaSimple<Nodo_Arbol>* getPoblacionTotal();
     void setPoblacionActual(ListaSimple<Nodo_Arbol*>* poblacionActual);
     ListaSimple<Nodo_Arbol*>* getPoblacionActual() ;
+    void nuevaGeneracion();
     
 };
 

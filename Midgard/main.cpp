@@ -15,8 +15,7 @@
 #include <stdlib.h>
 #include <sstream>
 #include <string>
-
-
+#include <typeinfo>
 using namespace std; 
  
 
@@ -34,15 +33,15 @@ int main() {
     //const char* s = const char*(itoa(num,charnum,10));
     //cout<<s.c_str()<<endl; 
     //cout.flush();
-   /* Mundo mundo;
+    Mundo mundo;
     ListaSimple<Pueblo>*list=new ListaSimple<Pueblo>(); 
     list=mundo.generarPoblacionInicial();
-    cout<<list->getHead()->getValue().GetTipo()<<endl;*/
+   // cout<<list->getHead()->getValue().GetTipo()<<endl;
     
-   /* Xml xml("Armas.xml");
+    /*Xml xml("Armas.xml");
     ListaSimple<const char*> *lista_armas=new ListaSimple<const char*>();
     lista_armas=xml.getElements();
-    cout<<lista_armas->getHead()->getValue()<<endl;*/
+    cout<< lista_armas->getHead()->getValue() <<endl;*/
     
     //cout<<list->getHead()->getValue().GetTipo()<<endl;
     /*Armas *ar=new Armas();

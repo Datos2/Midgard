@@ -8,7 +8,7 @@ Elves::~Elves(){
     
 }
 
-Elves::Elves(string ptipo,int pvida_max,int pataque_max,int pdefensa_max,
+Elves::Elves(const char* ptipo,int pvida_max,int pataque_max,int pdefensa_max,
     int pvelocidad_max,int pinteligencia_max,int pmagia_max,
     int penergiavital_max,int pblot_max,int prunes_max,int psupersticion_max)
     

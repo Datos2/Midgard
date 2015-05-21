@@ -7,8 +7,8 @@
 class DarkElves: public Pueblo{
 public:
     DarkElves();
-    DarkElves(string);
-    DarkElves(string,int,int,int,int,int,int,int,int,int,int);
+    DarkElves(const char*);
+    DarkElves(const char*,int,int,int,int,int,int,int,int,int,int);
     ~DarkElves();
     bool EdadMuerte(int);
     bool EdadParaPelea(int);

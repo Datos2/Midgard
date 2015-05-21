@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parametrosdwarves>
+<vidamax>80</vidamax>
+<ataquemax>80</ataquemax>
+<defensamax>90</defensamax>
+<velocidadmax>30</velocidadmax>
+<inteligenciamax>125</inteligenciamax>
+<magiamax>40</magiamax>
+<energiavitalmax>125</energiavitalmax>
+<blotmax>15</blotmax>
+<runesmax>40</runesmax>
+<supersticionmax>25</supersticionmax>
+</parametrosdwarves>
+
+

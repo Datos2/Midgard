@@ -8,7 +8,7 @@
 class Dwarves: public Pueblo {
 public:
     Dwarves();
-    Dwarves(string,int,int,int,int,int,int,int,int,int,int);
+    Dwarves(const char*,int,int,int,int,int,int,int,int,int,int);
     ~Dwarves();
     bool EdadMuerte(int);
     bool EdadParaPelea(int);
