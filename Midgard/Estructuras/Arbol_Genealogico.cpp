@@ -1,5 +1,6 @@
 #include "Arbol_Genealogico.h"
 
+
 Arbol_Genealogico::Arbol_Genealogico(){
     
     poblacionActual=new ListaSimple<Nodo_Arbol*>();
@@ -91,12 +92,13 @@ Nodo_Arbol* Arbol_Genealogico::buscarNodo(int pid){
         return NULL;
     }
 }
-void Arbol_Genealogico::poblacionInicial(int numPoblacion,int HP,int spd,int def,int Int,int MP,int VIT,int blot,int runes){
-    srand (time(NULL));//.......................................................................................
+void Arbol_Genealogico::poblacionInicial(int numPoblacion,int HP,int ATK,int spd,int def,int Int,int MP,int VIT,int blot,int runes){
+    //.......................................................................................
+    srand(time(NULL));
     for(int i=0;i<numPoblacion;i++){
         BitVector* newBit=new BitVector(32*8);
         int* newArray=new int[8];
-        newArray[0]=rand()%HP;
+        newArray[0]=rand()%ATK;
         newArray[1]=rand()%spd;
         newArray[2]=rand()%def;
         newArray[3]=rand()%Int;
@@ -105,7 +107,7 @@ void Arbol_Genealogico::poblacionInicial(int numPoblacion,int HP,int spd,int def
         newArray[6]=rand()%blot;
         newArray[7]=rand()%runes;
         newBit->initBitVector(newArray);
-        Individuo newInd("nada",newBit);
+        Individuo newInd(newBit,HP);
         nuevoIndividuo(newInd);
     }
      
@@ -148,5 +150,21 @@ void Arbol_Genealogico::nuevaGeneracion(){
 }
 
 Individuo* Arbol_Genealogico::getPadre(int fitness){
+    
+}
+
+ListaSimple<Nodo_Arbol>* Arbol_Genealogico::getPoblacionTotal(){
+    return poblacionTotal;
+}
+ListaSimple<Nodo_Arbol*>* Arbol_Genealogico::getPoblacionActual(){
+    return poblacionActual;
+}
+void Arbol_Genealogico::setPoblacionTotal(ListaSimple<Nodo_Arbol>* pTotal){
+    poblacionTotal=pTotal;
+}
+void Arbol_Genealogico::setPoblacionActual(ListaSimple<Nodo_Arbol*>* pActual){
+    poblacionActual=pActual;
+}
+int getMaxInt(){
     
 }

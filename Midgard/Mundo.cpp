@@ -1,6 +1,9 @@
 
 
 #include "Mundo.h"
+#include <stdio.h>      /* printf, scanf, puts, NULL */
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
 
 Mundo::Mundo() {
     poblaciones=this->generarPoblacionInicial();
@@ -31,4 +34,53 @@ ListaSimple<Pueblo>* Mundo::generarPoblacionInicial(){//genera
     return lista_pueblos;
     
 }
-
+int Mundo::Combate(Individuo* Individuo1, Individuo* Individuo2){
+    srand (time(NULL));//............................................
+    int individuo1=1;
+    int individuo2=2;
+    Individuo* primero;
+    Individuo* segundo;
+    if(Individuo1->getSpeed()>=Individuo2->getSpeed()){
+        primero=Individuo1;
+        segundo=Individuo2;
+    }
+    if(Individuo1->getSpeed()<Individuo2->getSpeed()){
+        primero=Individuo2;
+        segundo=Individuo1;
+        int individuo1=2;
+    int individuo2=1;
+    }
+    int vidaPrimero=primero->getHP();
+    int vidaSegundo=segundo->getHP();
+    while(true){
+        if(vidaPrimero<=0 and vidaSegundo<=0){
+            return 0;
+        }
+        if(vidaPrimero<=0){
+            return individuo1;
+        }
+        if(vidaSegundo<=0){
+            return individuo2;
+        }
+        if(rand()%100>=50){
+        vidaSegundo-=primero->getATK();
+        }
+        if(rand()%100<=((primero->getMP()*100)/1000000)){
+        vidaSegundo-=primero->getInt();
+        }
+        if(rand()%100<=((primero->getVit()*100)/1000000)){
+        vidaPrimero+=primero->getInt();
+        }
+        //segundo individuo
+        if(rand()%100>=50){
+        vidaPrimero-=segundo->getATK();
+        }
+        if(rand()%100<=((segundo->getMP()*100)/1000000)){
+        vidaPrimero-=segundo->getInt();
+        }
+        
+        if(rand()%100<=((primero->getVit()*100)/1000000)){
+        vidaSegundo+=segundo->getInt();
+        }
+    }
+}

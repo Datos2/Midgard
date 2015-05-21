@@ -17,8 +17,10 @@
 #include "Individuo.h"
 #include "Estructuras/ListaSimple.h"
 #include "Estructuras/Nodo_Arbol.h"
-      /* time */
+#include "TinyXmlLib/readSerial.h"
+//using namespace readSerial;
 namespace reproduccion{
+
     Individuo cruce(int,Individuo*,Individuo*);
     int makeMask1(int);
     int makeMask2(int);

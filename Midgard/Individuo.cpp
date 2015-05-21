@@ -4,12 +4,12 @@ int Individuo::idCriat=1;
 Individuo::Individuo() {
 }
 
-Individuo::Individuo(string ptipo){ 
+Individuo::Individuo(int pHP){ 
     id=idCriat;
-    tipo=ptipo;
+    //tipo=ptipo;
     edad=1;
     experiencia=0;
-
+    HP=pHP;
     idCriat++;
     BitVector* Bit=new BitVector(32*8);
     
@@ -20,13 +20,13 @@ Individuo::Individuo(string ptipo){
     
 }
 
-Individuo::Individuo(string ptipo,BitVector* vector){
+Individuo::Individuo(BitVector* vector, int pHP){
     
     this->id=idCriat;
-    this->tipo=ptipo;
+    //this->tipo=ptipo;
     edad=1;
     experiencia=0;
-    
+    HP=pHP;
     idCriat++;
     _stats=vector;
 }
@@ -67,6 +67,9 @@ void Individuo::setRunes(int pstat){
     _stats->setNum(pstat,7);
 }
 int Individuo::getHP(){
+    return HP;
+}
+int Individuo::getATK(){
     return _stats->getValue(0);
 }
 int Individuo::getSpeed(){
@@ -94,6 +97,8 @@ int Individuo::getRunes(){
 void Individuo::setEdad(int edad) {
     this->edad = edad;
 }
+
+void Individuo::matarIndividuo(){this->~Individuo();}//lo elimina de la lista, y de todo.
 
 int Individuo::getEdad(){
     return edad;

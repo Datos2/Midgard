@@ -1,4 +1,4 @@
-/* 
+ /* 
  * File:   Arbol_Genealogico.h
  * Author: briam
  *
@@ -8,9 +8,9 @@
 #ifndef ARBOL_GENEALOGICO_H
 #define	ARBOL_GENEALOGICO_H
 
-#include <iostream>
-#include <cstdio>
-#include <time.h> 
+#include <cstdlib>
+#include <stdlib.h>
+#include <time.h>
 #include "Nodo_Arbol.h"
 #include "ListaSimple.h"
 #include "../Individuo.h"
@@ -30,7 +30,7 @@ public://se definen los metodos publicos
     Arbol_Genealogico();
 
     ~Arbol_Genealogico();
-    void poblacionInicial(int,int,int,int,int,int,int,int,int);
+    void poblacionInicial(int,int,int,int,int,int,int,int,int,int);
     void nuevoIndividuo(Individuo);
     void nuevoIndividuo(int,int,Individuo);
     void matarIndividuosViejos(int);
@@ -43,7 +43,11 @@ public://se definen los metodos publicos
     int tipoPoblacion();
     void nuevaGeneracion();
     Individuo* getPadre(int);
-    
+    ListaSimple<Nodo_Arbol>* getPoblacionTotal() ;
+    ListaSimple<Nodo_Arbol*>* getPoblacionActual() ;
+    void setPoblacionTotal(ListaSimple<Nodo_Arbol>* ) ;
+    void setPoblacionActual(ListaSimple<Nodo_Arbol*>*) ;
+    int getMaxInt();
 };
 
 

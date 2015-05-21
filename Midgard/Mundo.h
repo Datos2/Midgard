@@ -3,6 +3,7 @@
 #ifndef MUNDO_H
 #define	MUNDO_H
 #include "Estructuras/ListaSimple.h"
+#include "Individuo.h"
 #include "Pueblo.h"
 #include "Edda.h"
 #include "DarkElves.h"
@@ -20,6 +21,7 @@ public:
     ListaSimple<Pueblo>*generarPoblacionInicial();
 private:
     ListaSimple<Pueblo>* poblaciones;
+    int Combate(Individuo*, Individuo*);
 };
 
 #endif	/* MUNDO_H */

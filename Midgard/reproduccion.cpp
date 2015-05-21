@@ -8,9 +8,14 @@
 #include "reproduccion.h"
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
-#include <time.h> 
+#include <time.h>       /* time */
 
-Individuo reproduccion::cruce(int rand,Individuo* pPadre1,Individuo* pPadre2){
+
+
+
+Individuo reproduccion::cruce(int random,Individuo* pPadre1,Individuo* pPadre2){
+    
+    
     srand (time(NULL));//........................................................................................
     BitVector* newBit=new BitVector(32*8);
     int* padre1=pPadre1->getBitVector()->getBits();
@@ -23,36 +28,36 @@ Individuo reproduccion::cruce(int rand,Individuo* pPadre1,Individuo* pPadre2){
         int index2=seekFirstBit(padre2[i]);
         //cout<<"tamaño de stat de padre 2 "<<index2<<endl;
         if(index1>index2){
-            int mask1=makeMask1(rand%index1);
-            int mask2=makeMask2(rand%index1);
+            int mask1=makeMask1(random%index1);
+            int mask2=makeMask2(random%index1);
             int newStat1=padre1[i]&mask1;
             int newStat2=padre2[i]&mask2;
-            int newStat=newStat1|newStat2;/*
+            int newStat=newStat1|newStat2;
             if(rand() %100<5){
                 newStat=mutate(newStat,rand() %seekFirstBit(newStat));
             }
             if(rand() %100<3){
                 newStat=inversion(newStat);
-            }*/
+            }
             newBit->setNum(newStat,i);
         }
         else if(index1<=index2){
-            int mask1=makeMask1(rand%index2);
-            int mask2=makeMask2(rand%index2);
+            int mask1=makeMask1(random%index2);
+            int mask2=makeMask2(random%index2);
             int newStat1=padre1[i]&mask1;
             int newStat2=padre2[i]&mask2;
-            int newStat=newStat1|newStat2;/*
+            int newStat=newStat1|newStat2;
             if(rand()%100<5){
                 newStat=mutate(newStat,rand() %seekFirstBit(newStat));
             }
             if(rand()%100<3){
                 newStat=inversion(newStat);
-            }*/
+            }
             newBit->setNum(newStat,i);
         }
         
     }
-    Individuo Bebe("guerrero",newBit);
+    Individuo Bebe(newBit,pPadre1->getHP());
     return Bebe;
 }
 int reproduccion::makeMask1(int index){
@@ -108,13 +113,14 @@ int reproduccion::inversion(int num){
     }
     return _num;
 }
+
 int reproduccion::fitnessInd(Individuo* pIndividuo){
     int* vector = pIndividuo->getBitVector()->getBits();
     int fit = 0;
     for(int f = 0; f < 8; f++){
         fit += vector[f];
     }
-    return (fit/8);
+    return (fit);
 }
 
 int reproduccion::maxFitness(ListaSimple<Nodo_Arbol*>* poblacionT){
