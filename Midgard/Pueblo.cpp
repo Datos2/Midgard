@@ -9,9 +9,9 @@ Pueblo::Pueblo(){
 
 Pueblo::Pueblo(const char* nombre_pueblo,const char* nombre){ 
     lista_criaturas=new ListaSimple<Individuo>();
-    Xml xml(nombre);
+    Xml xml1(nombre); 
     ListaSimple<const char*>* parametros_pueblos=new ListaSimple<const char*>();
-    parametros_pueblos=xml.getElements();
+    parametros_pueblos=xml1.getElements();
     this->supersticion_max=atoi(parametros_pueblos->getElemento(0));
     this->runes_max=atoi(parametros_pueblos->getElemento(1));
     this->blot_max=atoi(parametros_pueblos->getElemento(2));

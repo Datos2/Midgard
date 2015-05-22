@@ -12,6 +12,9 @@ Giants::Giants(const char* ptipo,int pvida_max,int pataque_max,int pdefensa_max,
     pvelocidad_max, pinteligencia_max, pmagia_max,
     penergiavital_max,pblot_max,prunes_max,psupersticion_max){}
 
+Giants::Giants(const char* ptipo,const char* nombre)
+    :Pueblo(ptipo,nombre){}
+
 Giants::~Giants() {
     delete this;
 }

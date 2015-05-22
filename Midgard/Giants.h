@@ -9,6 +9,7 @@ class Giants:public Pueblo{
 public:
     Giants();
     Giants(const char*,int,int,int,int,int,int,int,int,int,int);
+    Giants(const char*,const char*);
     ~Giants();
     bool EdadMuerte(int);
     bool EdadParaPelea(int);

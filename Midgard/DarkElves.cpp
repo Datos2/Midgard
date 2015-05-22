@@ -23,6 +23,9 @@ DarkElves::DarkElves(const char* ptipo,int pvida_max,int pataque_max,int pdefens
      pvelocidad_max, pinteligencia_max, pmagia_max,
     penergiavital_max,pblot_max,prunes_max,psupersticion_max){}
 
+DarkElves::DarkElves(const char*ptipo, const char*nombre)
+    :Pueblo(ptipo,nombre){}
+
 DarkElves::~DarkElves() {
 }
 

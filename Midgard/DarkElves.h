@@ -9,6 +9,7 @@ public:
     DarkElves();
     DarkElves(const char*);
     DarkElves(const char*,int,int,int,int,int,int,int,int,int,int);
+    DarkElves(const char*,const char*);
     ~DarkElves();
     bool EdadMuerte(int);
     bool EdadParaPelea(int);

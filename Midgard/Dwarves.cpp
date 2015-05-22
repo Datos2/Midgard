@@ -11,6 +11,9 @@ Dwarves::Dwarves(const char* ptipo,int pvida_max,int pataque_max,int pdefensa_ma
      pvelocidad_max, pinteligencia_max, pmagia_max,
     penergiavital_max,pblot_max,prunes_max,psupersticion_max){}
 
+Dwarves::Dwarves(const char*ptipo, const char*nombre)
+    :Pueblo(ptipo,nombre){}
+
 Dwarves::~Dwarves() {
     
 }

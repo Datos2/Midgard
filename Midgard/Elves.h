@@ -8,6 +8,7 @@ class Elves: public Pueblo{
 public:
     Elves();   
     Elves(const char*,int,int,int,int,int,int,int,int,int,int);
+    Elves(const char*,const char*);
     virtual ~Elves();
     bool EdadMuerte(int);
     bool EdadParaPelea(int);

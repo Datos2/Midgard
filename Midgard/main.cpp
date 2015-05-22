@@ -33,7 +33,7 @@ int main() {
     Mundo mundo;
     ListaSimple<Pueblo>*list=new ListaSimple<Pueblo>(); 
     list=mundo.generarPoblacionInicial();
-   
+    cout<<list->getElemento(0).GetTipo()<<endl;
   //  list=mundo.generarPoblacionInicial();
     //cout<<list->getHead()->getValue().GetTipo()<<endl;
     

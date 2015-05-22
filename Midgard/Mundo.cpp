@@ -25,6 +25,7 @@ ListaSimple<Pueblo>* Mundo::generarPoblacionInicial(){//genera las poblaciones i
     Pueblo pueblo_giants=Pueblo("Giants",75,95,60,25,60,30,60,20,80,30);
     Pueblo pueblo_darkelves=Pueblo("DarkElves",120,60,50,60,70,100,50,80,90,40);
     Pueblo pueblo_elves=Pueblo("Elves",100,85,55,70,80,125,100,25,50,50);*/
+    
     Pueblo pueblo_dwarves=Pueblo("dwarves","parametrosdwarves.xml");
     Pueblo pueblo_giants=Pueblo("giants","parametrosgiants.xml");
     Pueblo pueblo_darkelves=Pueblo("darkelves","parametrosdarkelves.xml");
