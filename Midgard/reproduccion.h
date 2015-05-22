@@ -29,6 +29,7 @@ namespace reproduccion{
     int inversion(int);
     int maxFitness(ListaSimple<Nodo_Arbol*>*);
     int fitnessInd(Individuo*);
+    int combate(Individuo*, Individuo*);
 };
 
 #endif	/* REPRODUCCION_H */

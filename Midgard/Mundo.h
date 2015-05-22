@@ -21,7 +21,7 @@ public:
     ListaSimple<Pueblo>*generarPoblacionInicial();
 private:
     ListaSimple<Pueblo>* poblaciones;
-    int Combate(Individuo*, Individuo*);
+    
 };
 
 #endif	/* MUNDO_H */

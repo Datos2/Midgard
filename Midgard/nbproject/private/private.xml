@@ -9,14 +9,14 @@
         <group>
             <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Datos/Xml.cpp</file>
             <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Estructuras/Nodo_Arbol.h</file>
+            <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Individuo.cpp</file>
             <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/main.cpp</file>
             <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/reproduccion.cpp</file>
             <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Estructuras/Arbol_Genealogico.h</file>
-            <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Estructuras/BitVector.cpp</file>
-            <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Estructuras/Nodo.h</file>
             <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Estructuras/Arbol_Genealogico.cpp</file>
+            <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Mundo.cpp</file>
             <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Individuo.h</file>
-            <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Pueblo.h</file>
+            <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/Giants.cpp</file>
             <file>file:/home/briam/NetBeansProjects/Midgard/Midgard/reproduccion.h</file>
         </group>
     </open-files>
