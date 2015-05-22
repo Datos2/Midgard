@@ -7,22 +7,22 @@ Pueblo::Pueblo(){
    
 }
 
-Pueblo::Pueblo(const char* nombre){ 
+Pueblo::Pueblo(const char* nombre_pueblo,const char* nombre){ 
     lista_criaturas=new ListaSimple<Individuo>();
     Xml xml(nombre);
     ListaSimple<const char*>* parametros_pueblos=new ListaSimple<const char*>();
     parametros_pueblos=xml.getElements();
-    this->vida_max=atoi(parametros_pueblos->getElemento(9));
-    this->ataque_max=atoi(parametros_pueblos->getElemento(8));
-    this->defensa_max=atoi(parametros_pueblos->getElemento(7));
-    this->velocidad_max=atoi(parametros_pueblos->getElemento(6));
-    this->inteligencia_max=atoi(parametros_pueblos->getElemento(5));
-    this->magia_max=atoi(parametros_pueblos->getElemento(4));
-    this->energiavital_max=atoi(parametros_pueblos->getElemento(3));
-    this->blot_max=atoi(parametros_pueblos->getElemento(2));
-    this->runes_max=atoi(parametros_pueblos->getElemento(1));
     this->supersticion_max=atoi(parametros_pueblos->getElemento(0));
-    this->tipo=nombre;
+    this->runes_max=atoi(parametros_pueblos->getElemento(1));
+    this->blot_max=atoi(parametros_pueblos->getElemento(2));
+    this->energiavital_max=atoi(parametros_pueblos->getElemento(3));
+    this->magia_max=atoi(parametros_pueblos->getElemento(4));
+    this->inteligencia_max=atoi(parametros_pueblos->getElemento(5));
+    this->velocidad_max=atoi(parametros_pueblos->getElemento(6));
+    this->defensa_max=atoi(parametros_pueblos->getElemento(7));
+    this->ataque_max=atoi(parametros_pueblos->getElemento(8));
+    this->vida_max=atoi(parametros_pueblos->getElemento(9));
+    this->tipo=nombre_pueblo;
 }
 
 void Pueblo::SetEdda_actual(Edda edda_actual) {

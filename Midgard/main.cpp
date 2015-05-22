@@ -25,18 +25,17 @@ using namespace std;
 int main() {
     //randomGenerator random; 
     //int num=random.numeroAleatorio(1,1000);
-    
-    
-
-
 
     //const char* s = const char*(itoa(num,charnum,10));
     //cout<<s.c_str()<<endl; 
     //cout.flush();
+    
     Mundo mundo;
     ListaSimple<Pueblo>*list=new ListaSimple<Pueblo>(); 
     list=mundo.generarPoblacionInicial();
-   // cout<<list->getHead()->getValue().GetTipo()<<endl;
+   
+  //  list=mundo.generarPoblacionInicial();
+    //cout<<list->getHead()->getValue().GetTipo()<<endl;
     
     /*Xml xml("Armas.xml");
     ListaSimple<const char*> *lista_armas=new ListaSimple<const char*>();

@@ -41,6 +41,15 @@ Individuo::Individuo(string ptipo,BitVector* vector,int ph){
     _stats=vector;
     
 }
+Individuo::Individuo(BitVector* vector,int ph){
+    
+    this->id=idCriat;
+    edad=1;
+    experiencia=0;
+    idCriat++;
+    _stats=vector;
+    this->HP=ph;
+}
 
 BitVector* Individuo::getBitVector(){
     return _stats;

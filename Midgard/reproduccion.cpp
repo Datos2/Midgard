@@ -53,7 +53,7 @@ Individuo reproduccion::cruce(int random,Individuo* pPadre1,Individuo* pPadre2){
         }
         
     }
-    Individuo Bebe("guerrero",newBit,pPadre1->getHP());
+    Individuo Bebe(newBit,pPadre1->getHP());
     return Bebe;
 }
 

@@ -25,10 +25,10 @@ ListaSimple<Pueblo>* Mundo::generarPoblacionInicial(){//genera las poblaciones i
     Pueblo pueblo_giants=Pueblo("Giants",75,95,60,25,60,30,60,20,80,30);
     Pueblo pueblo_darkelves=Pueblo("DarkElves",120,60,50,60,70,100,50,80,90,40);
     Pueblo pueblo_elves=Pueblo("Elves",100,85,55,70,80,125,100,25,50,50);*/
-    Pueblo pueblo_dwarves=Pueblo("parametrosdwarves.xml");
-    Pueblo pueblo_giants=Pueblo("parametrosgiants.xml");
-    Pueblo pueblo_darkelves=Pueblo("parametrosdarkelves.xml");
-    Pueblo pueblo_elves=Pueblo("parametroselves.xml");
+    Pueblo pueblo_dwarves=Pueblo("dwarves","parametrosdwarves.xml");
+    Pueblo pueblo_giants=Pueblo("giants","parametrosgiants.xml");
+    Pueblo pueblo_darkelves=Pueblo("darkelves","parametrosdarkelves.xml");
+    Pueblo pueblo_elves=Pueblo("elves","parametroselves.xml");
     lista_pueblos->insertar(pueblo_dwarves);
     lista_pueblos->insertar(pueblo_giants);
     lista_pueblos->insertar(pueblo_darkelves);
@@ -57,7 +57,7 @@ int Mundo::Combate(Individuo* Individuo1, Individuo* Individuo2){
     int vidaSegundo=segundo->getHP();
     while(true){
         if(vidaPrimero<=0 and vidaSegundo<=0){
-            return 0;
+            return 0;//mueren los dos
         }
         if(vidaPrimero<=0){
             return individuo1;

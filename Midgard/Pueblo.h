@@ -14,6 +14,7 @@ class Pueblo {
 public:
     Pueblo();
     Pueblo(const char*);
+    Pueblo(const char*,const char*);
     Pueblo(const char*,int,int,int,int,int,int,int,int,int,int);
     virtual ~Pueblo();
     void SetTipo(const char* tipo);

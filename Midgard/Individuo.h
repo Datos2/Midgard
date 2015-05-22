@@ -10,6 +10,7 @@ public:
     Individuo(string);
     Individuo(string,BitVector*);
     Individuo(string,BitVector*,int);
+    Individuo(BitVector*,int);
     BitVector* getBitVector();
     int getId();
     string getTipo();
